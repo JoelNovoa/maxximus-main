@@ -4,6 +4,8 @@ import Personas from "../Img/personas.png";
 import Footer from "../Components/Common/Fotter";
 import Carousel2 from "../Components/Common/Courosel2";
 import Header2 from "../Components/Common/Header2";
+import LogIn from "../Components/LogIn";
+import CreateAccount from "../Components/CreateAccount";
 
 const Events = () => {
     return (

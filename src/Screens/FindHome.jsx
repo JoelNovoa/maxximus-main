@@ -37,7 +37,7 @@ const FindHome = () => {
             <button
               type="submit"
               className="px-14 py-2 rounded-md bg-[#14253E] text-white rounded-t-4xl rounded-b-4xl"
-            >
+           >
               Search
             </button>
           </form>

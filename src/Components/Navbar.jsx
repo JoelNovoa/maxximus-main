@@ -40,7 +40,7 @@ const NavBar = () => {
     >
       <div>
         <Link to="/">
-          <img src={maxximum} alt="Maxximum Logo" className="h-20 w-auto" />
+          <img src={maxximum} alt="Maxximum Logo" className="h-20 w-auto text-center justify-center justify-self-center" />
         </Link>
       </div>
       {windowDimensions.innerWidth > 768 ? (
@@ -60,9 +60,10 @@ const NavBar = () => {
           >
             Events
           </Link>
-          <button className="text-black bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7">
-            Join Our Team
-          </button>
+          <Link to="/realtor" className="text-black bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7">
+          Join Our Team
+          </Link>
+
         </div>
       ) : (
         <>
@@ -84,10 +85,10 @@ const NavBar = () => {
               >
                 Events
               </Link>
+              <Link to="/realtor" className="text-black bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7">
+              Join Our Team
+              </Link>
 
-              <button className="text-black bg-Maxximum-Blanco rounded-xl px-5 font-Poppins mb-4">
-                Join Our Team
-              </button>
             </>
           )}
         </>
