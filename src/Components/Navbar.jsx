@@ -7,8 +7,8 @@ const NavBar = () => {
   const links = [
     { link: "", text: "Home", id: 1 },
     { link: "our-history", text: "Our History", id: 2 },
-    { link: "/", text: "Find a Home", id: 3 },
-    { link: "/", text: "Find a Realtor", id: 4 },
+    { link: "find-home", text: "Find a Home", id: 3 },
+    { link: "find-realtor", text: "Find a Realtor", id: 4 },
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [windowDimensions, setWindowDimensions] = useState({

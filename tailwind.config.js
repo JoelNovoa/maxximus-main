@@ -7,6 +7,9 @@ module.exports = {
       PoppinsBold: ["Poppins-Bold", "sans-serif"],
       PoppinsSemi: ["Poppins-semiBold", "sans-serif"]
     },
+    borderRadius: {
+      '4xl': '3rem',
+    },
     extend: {
       backgroundImage: {
         'hero-home': "url('/img/hero-pattern.svg')",
