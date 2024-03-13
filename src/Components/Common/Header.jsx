@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 
 
-const Header = ({img}) => {
+const Header = ({img, Titulo, Descripcion, Buton}) => {
 
     console.log(img)
     useEffect (() => {
@@ -23,22 +23,22 @@ const Header = ({img}) => {
         >
             <div className="text-white max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h1 className="text-3xl font-extrabold sm:text-5xl text-left">
-                Become
-                <strong className="block font-extrabold text-white text-left"> The modern agent </strong>
+                {Titulo}
+                <strong className="block font-extrabold text-white text-left"></strong>
             </h1>
 
             <p className="mt-4 max-w-lg sm:text-xl/relaxed text-left">
-            Welcome to Maxximum Realty where we revolutionize real estate marketing with innovative strategies that attract listings and buyers. Our approach redefines the lender-realtor relationship, fostering collaboration beyond the mortgage transaction.
+                {Descripcion}
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4 lg:items-center text-center">
+            {Buton ?? <div className="mt-8 flex flex-wrap gap-4 lg:items-center text-center">
                 <a
                 href="#"
                 className="block w-full rounded-xl bg-white px-12 py-3 text-sm font-medium text-black shadow sm:w-auto"
                 >
                 Learn More
                 </a>
-            </div>
+            </div>}
             </div>
         </div>
         </section>

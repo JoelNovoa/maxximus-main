@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBath, FaBed } from "react-icons/fa";
 import { TbBrandWindows } from "react-icons/tb";
+import Footer from "../Components/Common/Fotter";
 
 const FindHome = () => {
   const arrayCard = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -25,6 +26,13 @@ const FindHome = () => {
               <option>Han Solo</option>
               <option>Greedo</option>
             </select>
+            <select className="select select-bordered w-full max-w-xs px-50 pl-2 rounded-md bg-[#14253E] opacity-80 text-center">
+              <option disabled selected>
+                City, Neighborhood, ZIP, Addres
+              </option>
+              <option>Han Solo</option>
+              <option>Greedo</option>
+            </select>
             <input className="w-full max-w-xs px-10 py-2 rounded-md bg-[#14253E] opacity-80" />
             <button
               type="submit"
@@ -36,7 +44,7 @@ const FindHome = () => {
         </div>
       </section>
 
-      <section className="bg-[#14253E] text-white h-full">
+      <section className="bg-[#0A182E] text-white h-full">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center py-20">
             Featured Properties
@@ -86,6 +94,7 @@ const FindHome = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

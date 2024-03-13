@@ -55,7 +55,7 @@ const NavBar = () => {
             </Link>
           ))}
           <Link
-            to="/Events"
+            to="/events"
             className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins ml-7"
           >
             Events
@@ -79,7 +79,7 @@ const NavBar = () => {
           {isMenuOpen && (
             <>
               <Link
-                to="/Events"
+                to="/events"
                 className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins mb-4"
               >
                 Events
