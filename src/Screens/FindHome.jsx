@@ -8,47 +8,36 @@ const FindHome = () => {
 
   return (
     <>
-      <section className="bg-[url(./Img/banner1.png)] h-screen bg-cover bg-no-repeat flex items-center justify-center">
-        <div className="text-center text-white">
-          <h1 className="text-4xl font-bold mb-8">Find a Home</h1>
-          <div className="flex justify-center">
-          <div className="flex justify-center">
-            <form className="flex justify-center bg-[#14253E] opacity-80 rounded-4xl">
-              <select className="outline-none select select-bordered w-full max-w-xs pl-4 py-10 rounded-md text-center focus:outline-none bg-[#14253E] opacity-80 rounded-s-4xl">
-                <option disabled selected>
-                  Who shot first?
-                </option>
-                <option>Han Solo</option>
-                <option>Greedo</option>
-              </select>
-              <select className="outline-none select select-bordered w-full max-w-xs px-10 pl-2 rounded-md bg-[#14253E] opacity-80 text-center">
-                <option disabled selected>
-                  Who shot first?
-                </option>
-                <option>Han Solo</option>
-                <option>Greedo</option>
-              </select>
-              <select className="outline-none select select-bordered w-full max-w-xs px-50 pl-2 rounded-md bg-[#14253E] opacity-80 text-center">
-                <option disabled selected>
-                  City, Neighborhood, ZIP, Addres
-                </option>
-                <option>Han Solo</option>
-                <option>Greedo</option>
-              </select>
-              <input className="outline-none w-full max-w-xs px-10 py-2 rounded-md bg-[#14253E] opacity-80"  />
-            </form>
-          </div>
-          <div className="flex justify-center bg-[#14253E] rounded-r-4xl">
-            <button
-                type="submit"
-                className="px-14 py-2 rounded-md bg-[#0A182E] text-white rounded-t-4xl rounded-b-4xl"
-              >
-                Search
-              </button>
-          </div>
-          </div>
-        </div>
-      </section>
+<section className="bg-[url(./Img/banner1.png)] h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center">
+  <div className="text-center text-white mb-8">
+    <h1 className="text-4xl font-bold">Find a Home</h1>
+  </div>
+  <div className="w-full text-white">
+    <form className="flex flex-col sm:flex-row items-center justify-center">
+      <select className="outline-none select select-bordered w-full max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65 rounded-s-4xl mb-4 sm:mb-0 ">
+        <option disabled selected>
+          Type of house
+        </option>
+        <option>Han Solo</option>
+        <option>Greedo</option>
+      </select>
+      <select className="outline-none select select-bordered w-full max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65 mb-4 sm:mb-0 ">
+        <option disabled selected>
+          Range
+        </option>
+        <option>Han Solo</option>
+        <option>Greedo</option>
+      </select>
+      <div class="relative w-full max-w-lg flex items-center">
+        <input type="search" name="search" placeholder="City, Neighborhood, ZIP, Address" class="bg-[#14253E] opacity-65 w-full pl-4 py-4 sm:py-8 rounded-r-4xl focus:outline-none"/>
+        <button type="submit" class="absolute right-0 top-0 px-16 py-4 sm:py-8 rounded-4xl bg-[#0A182E] text-white" >
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
 
       <section className="bg-[#0A182E] text-white h-full">
         <div className="container mx-auto">
