@@ -60,7 +60,7 @@ const NavBar = () => {
           >
             Events
           </Link>
-          <Link to="/realtor" className="text-black bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7">
+          <Link to="/realtor" className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7">
           Join Our Team
           </Link>
 
@@ -85,7 +85,7 @@ const NavBar = () => {
               >
                 Events
               </Link>
-              <Link to="/realtor" className="text-black bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7">
+              <Link to="/realtor" className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7">
               Join Our Team
               </Link>
 
