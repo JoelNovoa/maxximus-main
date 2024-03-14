@@ -16,6 +16,7 @@ const Home = () => {
       <Header img={"bg-[url(./Img/banner1.png)]"} 
       Titulo={"Become the modern "}
       Descripcion={"Welcome to Maxximum Realty where we revolutionize real estate marketing with innovative strategies that attract listings and buyers. Our approach redefines the lender-realtor relationship, fostering collaboration beyond the mortgage transaction."}
+      
       /> 
     
       <Section 
@@ -23,6 +24,7 @@ const Home = () => {
       Titulo={"OUR HISTORY"}
        Descripcion={"At Maxximum Realty, we're pioneers in the real estate industry, harnessing the power of AI and the latest technologies to revolutionize the agent experience"}
        img={Mask} 
+       Buton={true}
        />  
        <Layout />
        <Carousel />

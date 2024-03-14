@@ -27,18 +27,20 @@ const Section = ({ Titulo, Blanco, Descripcion, Buton, img }) => {
 
           <p className="mt-4 max-w-lg sm:text-xl/relaxed">{Descripcion}</p>
 
-{Buton ??         <div className="mt-8 flex flex-wrap gap-4 justify-center">
-            <a
-              href="#"
-              className="block rounded bg-white px-6 py-4 text-sm font-medium text-black shadow focus:outline-none focus:ring sm:w-auto"
-            >
-              Learn More
-            </a>
-          </div>}
+          {Buton && (
+            <div className="mt-8 flex flex-wrap gap-4 justify-start"> {/* Cambiado a justify-start */}
+               <a
+                href="#"
+                className="underline text-white"
+              >
+                Learn More
+              </a>
+            </div>
+          )}
         </div>
 
-        <div className="mt-8 lg:mt-0 lg:ml-10">
-          <img src={img} className="max-w-full" alt="Section Image" />
+        <div className="mt-8 lg:mt-0 lg:ml-auto"> {/* Cambiado a lg:ml-auto */}
+          <img src={img} className="max-w-full lg:max-w-4xl" alt="Section Image" /> {/* Cambiado a max-w-4xl */}
         </div>
       </div>
     </section>
@@ -46,3 +48,4 @@ const Section = ({ Titulo, Blanco, Descripcion, Buton, img }) => {
 };
 
 export default Section;
+

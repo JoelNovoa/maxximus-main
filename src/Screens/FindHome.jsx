@@ -49,7 +49,7 @@ const FindHome = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-20">
             {arrayCard.map(() => {
               return (
-                <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white mt-10">
+                <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white mt-10 border border-white">
                   <img
                     className="w-full"
                     src="https://arquitectopablorestrepo.com/wp-content/uploads/2022/03/Dise%C3%B1o-casa-familiar-el-bambu-3-800x600.jpg"
