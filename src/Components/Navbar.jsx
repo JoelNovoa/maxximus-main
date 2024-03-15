@@ -21,8 +21,9 @@ const NavBar = () => {
       innerHeight: window.innerHeight,
       innerWidth: window.innerWidth,
     });
+    // Cierra el menú al cambiar de tamaño de pantalla
+    setIsMenuOpen(false);
   };
-
   useEffect(() => {
     window.addEventListener("resize", detecSize);
     return () => {
@@ -63,6 +64,7 @@ const NavBar = () => {
                 className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins mb-4"
                 to={route.link}
                 key={route.id}
+                onClick={() => setIsMenuOpen(false)}
               >
                 {route.text}
               </Link>
