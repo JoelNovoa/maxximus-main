@@ -38,13 +38,13 @@ const NavBar = () => {
           : "flex fixed flex-col h-full items-center w-full px-4 justify-around bg-[#0A182E]/[.8] z-50"
       }
     >
-      <div>
+      <div className="ml-8">
         <Link to="/">
           <img src={maxximum} alt="Maxximum Logo" className="h-20 w-auto text-center justify-center justify-self-center" />
         </Link>
       </div>
       {windowDimensions.innerWidth > 768 ? (
-        <div className="flex items-center">
+        <div className="flex-grow text-center">
           {links.map((route) => (
             <Link
               className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins ml-7"
@@ -54,16 +54,6 @@ const NavBar = () => {
               {route.text}
             </Link>
           ))}
-          <Link
-            to="/events"
-            className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins ml-7"
-          >
-            Events
-          </Link>
-          <Link to="/realtor" className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7">
-          Join Our Team
-          </Link>
-
         </div>
       ) : (
         <>
@@ -77,7 +67,7 @@ const NavBar = () => {
                 {route.text}
               </Link>
             ))}
-          {isMenuOpen && (
+          {isMenuOpen && ( // Añadido
             <>
               <Link
                 to="/events"
@@ -85,13 +75,31 @@ const NavBar = () => {
               >
                 Events
               </Link>
-              <Link to="/realtor" className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7">
-              Join Our Team
+              <Link
+                to="/realtor"
+                className="text-xl text-Maxximum-Blanco rounded-4xl bg-white text-black px-9 hover:font-bold font-Poppins mb-4"
+              >
+                Join Our Team
               </Link>
-
             </>
           )}
         </>
+      )}
+      {windowDimensions.innerWidth > 768 && (
+        <div className="mr-8">
+          <Link
+            to="/events"
+            className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins ml-0 md:ml-7" // Ajusta el margen izquierdo aquí
+          >
+            Events
+          </Link>
+          <Link
+            to="/realtor"
+            className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7"
+          >
+            Join Our Team
+          </Link>
+        </div>
       )}
       {windowDimensions.innerWidth < 768 && (
         <div>
@@ -117,3 +125,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
