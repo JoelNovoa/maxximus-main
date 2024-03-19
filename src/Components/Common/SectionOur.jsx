@@ -8,7 +8,7 @@ const SectionOur = ({ BG, Titulo, Descripcion, SubTitulo, SubDescripcion }) => {
                     <div className="lg:w-6/12 lg:p-0 p-7 text-center mx-auto">
                         <h1 className="text-4xl font-bold leading-tight mb-3 capitalize">{Titulo}</h1> {/* Reducido el margen inferior */}
                         <br/>
-                        <p className="text-xl mb-3">{Descripcion}</p> {/* Reducido el margen inferior */}
+                        <p className="text-xl ">{Descripcion}</p> {/* Reducido el margen inferior */}
                         <h1 className="text-4xl font-bold leading-tight mb-3 capitalize">{SubTitulo}</h1> {/* Reducido el margen inferior */}
                         <br/>
                         <p className="text-xl">{SubDescripcion}</p>

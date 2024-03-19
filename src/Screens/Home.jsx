@@ -14,7 +14,8 @@ const Home = () => {
   return (
     <div className="text-Maxximun-Blanco">
       <Header img={"bg-[url(./Img/banner1.png)]"} 
-      Titulo={"Become the modern "}
+      Titulo={"Become"}
+      Subtitulo={"the Modern Agent"}
       Descripcion={"Welcome to Maxximum Realty where we revolutionize real estate marketing with innovative strategies that attract listings and buyers. Our approach redefines the lender-realtor relationship, fostering collaboration beyond the mortgage transaction."}
       
       /> 
@@ -35,6 +36,7 @@ const Home = () => {
         img={Banner}
         />
       <SectionForm
+        
         Titulo={"Become the modern agent with us"}
         SubTitulo={"Grow Your Business With Maxximun"}
         Descripcion={"At Maxximum Realty, we understand that a great agent makes all the difference. Join us to leverage tailored strategies for the digital age, unlocking more leads, boosting sales, and earning higher commissions. Experience the future of real estate with Maxximum Realty—we're here to help you thrive."}

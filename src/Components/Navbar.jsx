@@ -39,13 +39,13 @@ const NavBar = () => {
           : "flex fixed flex-col h-full items-center w-full px-4 justify-around bg-[#0A182E]/[.8] z-50"
       }
     >
-      <div className="ml-8">
+      <div className="justify-items-center ml-8 w-2/7">
         <Link to="/">
           <img src={maxximum} alt="Maxximum Logo" className="h-20 w-auto text-center justify-center justify-self-center" />
         </Link>
       </div>
       {windowDimensions.innerWidth > 768 ? (
-        <div className="flex-grow text-center">
+        <div className="w-3/7  text-center ">
           {links.map((route) => (
             <Link
               className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins ml-7"
@@ -88,13 +88,16 @@ const NavBar = () => {
         </>
       )}
       {windowDimensions.innerWidth > 768 && (
-        <div className="mr-8">
+        <>
+        <div className="flex w-1/7 text-center">
           <Link
             to="/events"
-            className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins ml-0 md:ml-7" // Ajusta el margen izquierdo aquí
+            className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins ml-0 " // Ajusta el margen izquierdo aquí
           >
             Events
           </Link>
+        </div>       
+        <div className="flex w-1/7 text-center">
           <Link
             to="/realtor"
             className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-7"
@@ -102,6 +105,7 @@ const NavBar = () => {
             Join Our Team
           </Link>
         </div>
+        </>
       )}
       {windowDimensions.innerWidth < 768 && (
         <div>

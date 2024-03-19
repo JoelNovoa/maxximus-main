@@ -2,6 +2,10 @@ import React from "react";
 import { FaBath, FaBed } from "react-icons/fa";
 import { TbBrandWindows } from "react-icons/tb";
 import Footer from "../Components/Common/Fotter";
+import Vector from "../Img/Vector.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 const FindHome = () => {
   const arrayCard = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -13,9 +17,11 @@ const FindHome = () => {
     <h1 className="text-4xl font-bold">Find a Home</h1>
   </div>
   <div className="w-full text-white">
-    <form className="flex flex-col sm:flex-row items-center justify-center">
-      <select className="outline-none select select-bordered w-full max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65 rounded-s-4xl mb-4 sm:mb-0 ">
+    <form className="flex flex-col sm:flex-row items-center justify-center">   
+      <select className="outline-none select select-bordered w-full max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65 rounded-s-4xl mb-4 sm:mb-0 ">    
         <option disabled selected>
+        <FontAwesomeIcon icon={faCoffee} />
+        
           Type of house
         </option>
         <option>Han Solo</option>
@@ -24,6 +30,7 @@ const FindHome = () => {
       <select className="outline-none select select-bordered w-full max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65 mb-4 sm:mb-0 ">
         <option disabled selected>
           Range
+
         </option>
         <option>Han Solo</option>
         <option>Greedo</option>

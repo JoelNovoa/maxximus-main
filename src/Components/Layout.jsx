@@ -10,8 +10,8 @@ const Layout =() => {
     </h1>
     <div className="bg-[#0A182E] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">  
         {/* Primer elemento */}
-        <div className="text-white p-4 rounded-lg shadow-md flex items-center justify-center">
-            <img src={Employes} className="h-12 w-auto mr-4" />
+        <div className="text-white p-4 rounded-lg shadow-md flex items-center justify-center border-white ">
+            <img src={Employes} className="h-20 w-auto mr-4" />
             <div>
                 <h2 className="text-xl font-bold mb-2 text-left">Employee 
                     <br />
@@ -21,7 +21,7 @@ const Layout =() => {
         </div>
         {/* Segundo elemento */}
         <div className="text-white p-4 rounded-lg shadow-md flex items-center justify-center">
-            <img src={Phone} className="h-12 w-auto mr-4" />
+            <img src={Phone} className="h-20 w-auto mr-4" />
             <div>
                 <h2 className="text-xl font-bold mb-2 text-left">Marketing & 
                     <br />
@@ -31,7 +31,7 @@ const Layout =() => {
         </div>
         {/* Tercer elemento */}
         <div className="text-white p-4 rounded-lg shadow-md flex items-center justify-center">
-            <img src={Tech} alt="Maxximum Logo" className="h-12 w-auto mr-4" />
+            <img src={Tech} alt="Maxximum Logo" className="h-20 w-auto mr-4" />
             <div>
                 <h2 className="text-xl font-bold mb-2 text-left">Technology</h2>
             </div>

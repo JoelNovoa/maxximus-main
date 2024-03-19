@@ -18,16 +18,16 @@ const OurHistory = () => {
             BG={true}
             Titulo={"OUR HISTORY"}
             Descripcion={
-            "At MaxximumThe story is not to be just a Real Estate company, but the authority of real time data and news source when it comes to home search, home finance, home styles, new communities, family, events, community news, and great interactive tools for everyone. Creating a culture of caring and providing the audience valuable information to help them derive to a better decision to home buying. The home buying experience does not need to be dreadful or stressful. Its a happy moment, a happy event. Realty, we're pioneers in the real estate industry, harnessing the power of AI and the latest technologies to revolutionize the agent experience"
+            "The story is not to be just a Real Estate company, but the authority of real time data and news source when it comes to home search, home finance, home styles, new communities, family, events, community news, and great interactive tools for everyone. Creating a culture of caring and providing the audience valuable information to help them derive to a better decision to home buying. The home buying experience does not need to be dreadful or stressful. Its a happy moment, a happy event."
             }
             SubDescripcion={
-            "ReEach real estate transaction has a true and real story behind it. We want to make thats experience become a part of the brand story itself. Having the opportunity to connects and co-create stories with our clients in new, meaningful ways that inspire participations and engagement.cent years have seen a pivotal shift for salespeople with the surge in online and social media interaction, driven by technology. Embracing this change is positive but demands acquiring new methods and skills. At Maxximum Realty, we excel in adapting to innovative tools and business approaches, ensuring effective execution for success, much like Real Estate Agents in their field."
+            "Each real estate transaction has a true and real story behind it. We want to make thats experience become a part of the brand story itself. Having the opportunity to connects and co-create stories with our clients in new, meaningful ways that inspire participations and engagement."
             }
         />
         <SectionOur2
-            Titulo={"Become the modern agent with us"}
+            Titulo={"MISSION"}
             Descripcion={
-            "At Maxximum Realty, we understand that a great agent makes all the difference. Join us to leverage tailored strategies for the digital age, unlocking more leads, boosting sales, and earning higher commissions. Experience the future of real estate with Maxximum Realty—we're here to help you thrive."
+            "Maxximum Realty redefines the real estate experience by transcending tradition. Our mission is to integrate unique stories into our brand narrative, fostering connections and creating meaningful experiences with our clients. More than a real estate agency, we inspire engagement in the happy moments of home buying. As a full-service digital real estate agency, we exclusively provide powerful, digital, and impactful marketing services to our members, propelling customer satisfaction and retention into a new era. At Maxximum Realty, we do it all for the modern agent."
             }
             SubTitulo={"VISION"}
             SubDescripcion={"Empowering the Modern Agent."}

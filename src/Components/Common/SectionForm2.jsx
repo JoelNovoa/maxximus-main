@@ -1,10 +1,10 @@
 import React from "react";
 
-const SectionForm = ({ img, Titulo, SubTitulo, Descripcion }) => {
+const SectionForm2 = ({ img, Titulo, SubTitulo, Descripcion }) => {
   return (
-
-    <section className="relative bg-[#0A182E] bg-cover bg-center bg-[url(././Img/banner3-1.png)]">
-      <div className="absolute inset-0 bg-black opacity-35"></div>
+    
+    <section className="relative bg-[#0A182E] bg-cover bg-center bg-[url(././Img/hombre-negocios.png)]">
+      <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative mx-auto max-w-screen-xl lg:flex lg:h-screen lg:items-center">
         <div className="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right text-white lg:mr-auto">
           <h1 className="text-3xl font-extrabold sm:text-5xl">{Titulo}</h1>
@@ -72,5 +72,4 @@ const SectionForm = ({ img, Titulo, SubTitulo, Descripcion }) => {
   );
 };
 
-export default SectionForm;
-
+export default SectionForm2;
