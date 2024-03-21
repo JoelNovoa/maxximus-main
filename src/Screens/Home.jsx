@@ -9,16 +9,12 @@ import Footer from "../Components/Common/Fotter";
 import Carousel from "../Components/Carousel";
 import Banner from "../Img/banner-8.png";
 import SectionForm from "../Components/Common/SectionForm";
+import Sliderheader from "../Components/SliderHeader";
 
 const Home = () => {
   return (
     <div className="text-Maxximun-Blanco">
-      <Header img={"bg-[url(./Img/banner1.png)]"} 
-      Titulo={"Become"}
-      Subtitulo={"the Modern Agent"}
-      Descripcion={"Welcome to Maxximum Realty where we revolutionize real estate marketing with innovative strategies that attract listings and buyers. Our approach redefines the lender-realtor relationship, fostering collaboration beyond the mortgage transaction."}
-      
-      /> 
+      <Sliderheader/>
     
       <Section 
       Blanco={false}
@@ -34,6 +30,7 @@ const Home = () => {
        Titulo={"TECHNOLOGY"}
        Descripcion={"Recent years have seen a pivotal shift for salespeople with the surge in online and social media interaction, driven by technology. Embracing this change is positive but demands acquiring new methods and skills. At Maxximum Realty, we excel in adapting to innovative tools and business approaches, ensuring effective execution for success, much like Real Estate Agents in their field."}
         img={Banner}
+        Buton={true}
         />
       <SectionForm
         

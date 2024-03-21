@@ -4,39 +4,32 @@ import Phone from "../Img/megaphone1.png";
 import Tech from "../Img/technology1.png";
 
 const Layout =() => {
-    return(<div className="bg-[#0A182E] items-center justify-center align-center">
-    <h1 className="text-3xl font-bold text-center mb-6 text-white">
+    return(
+    <div className="bg-[#0A182E] items-center justify-center align-center">
+ <div className="">
+    <h1 className="text-4xl my-12 font-bold text-center text-white border-y-2 border-y-white px-32">
         HERE IS WHAT WE OFFER YOU?
     </h1>
-    <div className="bg-[#0A182E] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">  
-        {/* Primer elemento */}
-        <div className="text-white p-4 rounded-lg shadow-md flex items-center justify-center border-white ">
-            <img src={Employes} className="h-20 w-auto mr-4" />
-            <div>
-                <h2 className="text-xl font-bold mb-2 text-left">Employee 
-                    <br />
-                    Training  & HR
-                </h2>
-            </div>
-        </div>
-        {/* Segundo elemento */}
-        <div className="text-white p-4 rounded-lg shadow-md flex items-center justify-center">
-            <img src={Phone} className="h-20 w-auto mr-4" />
-            <div>
-                <h2 className="text-xl font-bold mb-2 text-left">Marketing & 
-                    <br />
-                    Referral Software
-                </h2>
-            </div>
-        </div>
-        {/* Tercer elemento */}
-        <div className="text-white p-4 rounded-lg shadow-md flex items-center justify-center">
-            <img src={Tech} alt="Maxximum Logo" className="h-20 w-auto mr-4" />
-            <div>
-                <h2 className="text-xl font-bold mb-2 text-left">Technology</h2>
-            </div>
+</div>
+
+<div className="bg-[#0A182E] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 col-span-2 ">  
+    {/* Primer elemento */}
+    <div className="text-white p-6 rounded-lg shadow-md flex items-end justify-center">
+        <div>
+            <h2 className="text-xl font-bold mb-2 text-left">Our most lucrative 100% commission plan
+            </h2>
         </div>
     </div>
+    {/* Segundo elemento */}
+    <div className="text-white w-2/4 p-4 rounded-lg shadow-md flex items-center justify-end">
+        <div className="mt-8 flex flex-wrap gap-4 justify-end">
+            <a href="#" className="underline text-xl font-bold mb-2 text-left">
+                Learn More
+            </a>
+            <span> &gt;</span>
+        </div>
+    </div>
+</div>
 </div>
 
     );

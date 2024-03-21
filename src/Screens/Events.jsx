@@ -6,6 +6,7 @@ import Carousel2 from "../Components/Common/Courosel2";
 import Header2 from "../Components/Common/Header2";
 import LogIn from "../Components/LogIn";
 import CreateAccount from "../Components/CreateAccount";
+import Sliderheader from "../Components/SliderHeader";
 
 const Events = () => {
     return (

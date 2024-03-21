@@ -8,15 +8,24 @@ const Map = (props) => {
     return (
         <div className="space-y-4 bg-[#0A182E] min-h-screen flex flex-col">
             <div className="flex items-center justify-center lg:justify-start lg:ml-12">
-                <div className="mx-auto lg:ml-0 lg:mr-auto md:w-1/2 lg:w-1/3 xl:w-1/4 mt-10 bg-white rounded-4xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    <div className="flex items-center">
-                        <span className="text-black">United States</span>
-                        <svg className="w-5 h-5 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"></path>
-                        </svg>
-                        <input type="text" className="w-full rounded-4xl px-3 py-2 placeholder-gray-400 text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-4" placeholder="Search by Address, City, Zip..." />
-                    </div>
-                </div>
+            <div className="mx-auto lg:ml-0 lg:mr-auto md:w-1/2 lg:w-1/3 xl:w-1/4 mt-10">
+            <div class='max-w-md mx-auto'>
+            <div class="flex rounded-4xl bg-white px-2 w-full max-w-[600px]">
+                    <input
+                    type="text"
+                    class="w-full bg-white flex bg-transparent pl-2 text-black outline-0"
+                    placeholder="Search by Address, City, Zip..."
+                    />
+                    <button type="submit" class="relative p-2 rounded-4xl bg-white rounded-full">
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            <g id="SVGRepo_iconCarrier"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+            </svg>
+            </button>
+      </div>
+            </div>
+            </div>
             </div>
            <div className="bg-[#0A182E] mt-10 py-4 h-32 w-full">
                 <h2 className="text-3xl font-bold text-white text-center lg:ml-12 lg:text-left">Locations</h2>
