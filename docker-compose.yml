@@ -1,0 +1,19 @@
+version: '3.8'  # Specify the Docker Compose version
+
+services:
+  my-react-app:
+    build: .  # Build the image from the current directory (containing Dockerfile)
+    ports:
+      - "80:80"  # Map container port 80 to host port 80
+    volumes:
+      - ./:/app  # Mount the current directory as /app in the container
+    depends_on:
+      - nginx  # Start Nginx service after building the app
+    command: npm start  # Run the command to start the React app
+
+  nginx:
+    image: nginx:latest  # Use the official Nginx image
+    volumes:
+      - ./build:/usr/share/nginx/html  # Mount the build directory of your app into Nginx's document root
+    ports:
+      - "80:80"  # Map container port 80 to host port 80

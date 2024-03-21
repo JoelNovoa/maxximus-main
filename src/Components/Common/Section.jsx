@@ -14,20 +14,21 @@ const Section = ({ Titulo, Blanco, Descripcion, Buton, img }) => {
       className={
         Blanco
           ? "flex flex-col items-center justify-center relative bg-white bg-cover bg-center h-screen"
-          : "flex flex-col items-center justify-center relative bg-[#0A182E] bg-cover bg-center h-screen"
+          : "flex flex-col  justify-center relative bg-[#0A182E] bg-cover bg-center h-screen"
       }
     >
+       {/* Línea blanca en el eje x a la izquierda */}
+       <div className="w-px bg-white absolute top-0 left-10" style={{ height: secondLineTop }}></div>
+       
       <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
       <div className="max-w-screen-xl flex flex-col lg:flex-row items-center justify-center lg:items-start">
-        {/* Línea blanca en el eje x a la izquierda */}
-        <div className="w-px bg-white absolute top-0 left-60" style={{ height: secondLineTop }}></div>
 
         <div
           className={
             Blanco
               ? "max-w-xl text-left ltr:sm:text-left rtl:sm:text-right text-black sm:mx-10 sm:my-6"
-              : "max-w-xl text-left ltr:sm:text-left rtl:sm:text-right text-white sm:mx-10 sm:my-6"
+              : "max-w-xl text-left ltr:sm:text-left rtl:sm:text-right text-white sm:mx-10 sm:my-6 pl-10"
           }
         >
           <h1 className="text-3xl font-extrabold sm:text-5xl">{Titulo}</h1>
