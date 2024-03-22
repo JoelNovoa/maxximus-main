@@ -99,7 +99,7 @@ const Carousel = () => {
                     <ButtonNext
                         role="button"
                         aria-label="slide forward"
-                        className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 p-6 rounded-full"
+                        className="absolute  right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 p-6 rounded-full"
                         id="next"
                         style={{ backgroundColor: 'white',  borderRadius: '50%' }}
                     >
@@ -134,12 +134,13 @@ const Carousel = () => {
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                                             <img src={Corousel2} alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute inset-0 flex flex-col justify-center items-center p-6">
-                                                <h1 className="lg:text-xl leading-4 text-white">Real State 24</h1>
-                                                <h3 className="text-white">Event for real estate</h3>
-                                                <h1 className="lg:text-xl leading-4 text-white">2024</h1>
+                                                <h1 className="lg:text-xl leading-8  text-white font-bold">Real State 24</h1>
+                                                <h3 className="text-white font-light">Event for real estate</h3>
+                                                <h1 className="lg:text-xl leading-4 text-white font-bold">2024</h1>
+                                                <br />
                                                 <a
                                                     href="#"
-                                                    className="mt-4 block w-full max-w-xs rounded-xl bg-white px-12 py-3 text-sm font-medium text-black shadow sm:w-auto text-center"
+                                                    className="block w-full rounded-4xl bg-white px-12 py-3 text-sm font-medium text-black shadow focus:outline-none focus:rin sm:w-auto"
                                                 >
                                                     More Info
                                                 </a>
@@ -199,12 +200,13 @@ const Carousel = () => {
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                                             <img src={Corousel2} alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute inset-0 flex flex-col justify-center items-center p-6">
-                                                <h1 className="lg:text-xl leading-4 text-white">Real State 24</h1>
-                                                <h3 className="text-white">Event for real estate</h3>
-                                                <h1 className="lg:text-xl leading-4 text-white">2024</h1>
+                                                <h1 className="lg:text-xl leading-8  text-white font-bold">Real State 24</h1>
+                                                <h3 className="text-white font-light">Event for real estate</h3>
+                                                <h1 className="lg:text-xl leading-4 text-white font-bold">2024</h1>
+                                                <br />
                                                 <a
                                                     href="#"
-                                                    className="mt-4 block w-full max-w-xs rounded-xl bg-white px-12 py-3 text-sm font-medium text-black shadow sm:w-auto text-center"
+                                                    className="block w-full rounded-4xl bg-white px-12 py-3 text-sm font-medium text-black shadow focus:outline-none focus:rin sm:w-auto"
                                                 >
                                                     More Info
                                                 </a>

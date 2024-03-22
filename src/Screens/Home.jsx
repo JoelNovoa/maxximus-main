@@ -15,8 +15,7 @@ import SeccionHome from  "../Components/SeccionHome"
 const Home = () => {
   return (
     <div className="text-Maxximun-Blanco">
-      <Sliderheader/>
-    
+      <Sliderheader/>    
       <Section 
       Blanco={false}
       Titulo={"OUR HISTORY"}
@@ -24,7 +23,8 @@ const Home = () => {
        img={Mask} 
        Buton={true}
        />  
-       <Layout />
+       <Layout/>
+
        <Carousel />
        <Section 
        Blanco={true}

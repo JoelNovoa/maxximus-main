@@ -13,7 +13,7 @@ const Map = (props) => {
             <div class="flex rounded-4xl bg-white px-2 w-full max-w-[600px]">
                     <input
                     type="text"
-                    class="w-full bg-white flex bg-transparent pl-2 text-black outline-0"
+                    class="w-full bg-white flex bg-transparent rounded-4xl pl-2 text-black outline-0"
                     placeholder="Search by Address, City, Zip..."
                     />
                     <button type="submit" class="relative p-2 rounded-4xl bg-white rounded-full">
@@ -33,44 +33,44 @@ const Map = (props) => {
 
             <div className="flex-grow flex flex-wrap justify-center">
                 <div className="bg-[#0A182E] w-full lg:w-1/2 xl:w-1/3 px-8 py-4">
-                    <section>
-                        <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
-                            <h3 className="text-white">Laguna Hills</h3>
-                            <p className="text-gray-400">23330 Mill Creek Dr Ste 250,<br /> 
-                            Laguna Hills, <br/>
-                            California, 92653, USA</p>
-                        </div>
-                        <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
-                            <h3 className="text-white">Orlando</h3>
-                            <p className="text-gray-400">Lorem ipsum dolor sit amet,<br/>
-                            consectetur adipiscing elit, <br/>
-                            sed do eiusmod tempor incididunt ut <br/>
-                            labore et dolore magna aliqua.</p>
-                        </div>
-                        <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
-                            <h3 className="text-white">Dallas</h3>
-                            <p className="text-gray-400">Lorem ipsum dolor sit amet, <br/>
-                                consectetur adipiscing elit, sed do <br/>
-                                eiusmod tempor incididunt ut <br/>
-                                labore et dolore magna aliqua. </p>
-                        </div>
-                        <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
-                            <h3 className="text-white">Dallas </h3>
-                            <p className="text-gray-400">Lorem ipsum dolor sit amet, <br/>
-                                consectetur adipiscing elit, sed do <br/>
-                                eiusmod tempor incididunt ut <br/>
-                                labore et dolore magna aliqua.</p>
-                        </div>
-                    </section>
+                <section className="flex flex-col items-center lg:items-start">
+                <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
+                    <h3 className="text-white">Laguna Hills</h3>
+                    <p className="text-gray-400">Lorem ipsum dolor sit amet,<br/>
+                    consectetur adipiscing elit, <br/>
+                    sed do eiusmod tempor incididunt ut <br/>
+                    labore et dolore magna aliqua.</p>
                 </div>
-                <div className="bg-[#0A182E] w-full lg:w-1/2 xl:w-2/3 px-8 py-4 ">
-                <div class="relative w-50 h-96 mr-12">
-                    <iframe class="absolute top-0 left-0 w-full h-full"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
-                        frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0">
-                    </iframe>
+                <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
+                    <h3 className="text-white">Orlando</h3>
+                    <p className="text-gray-400">Lorem ipsum dolor sit amet,<br/>
+                    consectetur adipiscing elit, <br/>
+                    sed do eiusmod tempor incididunt ut <br/>
+                    labore et dolore magna aliqua.</p>
                 </div>
+                <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
+                    <h3 className="text-white">Dallas</h3>
+                    <p className="text-gray-400">Lorem ipsum dolor sit amet, <br/>
+                        consectetur adipiscing elit, sed do <br/>
+                        eiusmod tempor incididunt ut <br/>
+                        labore et dolore magna aliqua. </p>
                 </div>
+                <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
+                    <h3 className="text-white">Dallas </h3>
+                    <p className="text-gray-400">Lorem ipsum dolor sit amet, <br/>
+                        consectetur adipiscing elit, sed do <br/>
+                        eiusmod tempor incididunt ut <br/>
+                        labore et dolore magna aliqua.</p>
+                </div>
+                </section>
+
+                </div>
+                <div className="bg-[#0A182E] w-full lg:w-1/2 xl:w-2/3 px-8 py-4 mx-auto">
+  <div className="relative w-full h-96">
+    <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</div>
+
             </div>
         </div>
     );

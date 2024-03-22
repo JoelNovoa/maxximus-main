@@ -9,22 +9,24 @@ import FindHome from './Screens/FindHome';
 import NavBar from './Components/Navbar';
 import Realtor from './Screens/Realtor';
 
-import { BrowserRouter, Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DynamicButton from './Components/Buttons';
 function App() {
   return (
   <div className="flex flex-col">
-  <BrowserRouter>
-    <NavBar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/events" element={<Events />} />
-      <Route path="/our-history" element={<OurHistory />} />
-      <Route path="/find-realtor" element={<FindRealtor />} />
-      <Route path="/find-home" element={<FindHome />} />
-      <Route path="/realtor" element={<Realtor />} />
-    </Routes>
-  </BrowserRouter>
+    <Router>
+      <div className="flex flex-col">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/our-history" element={<OurHistory />} />
+          <Route path="/find-realtor" element={<FindRealtor />} />
+          <Route path="/find-home" element={<FindHome />} />
+          <Route path="/realtor" element={<Realtor />} />
+        </Routes>
+      </div>
+    </Router>
   </div>
   );
 }

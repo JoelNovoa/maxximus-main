@@ -3,17 +3,18 @@ import React from "react";
 const SectionForm = ({ img, Titulo, SubTitulo, Descripcion }) => {
   return (
 
-    <section className="relative bg-[#0A182E] bg-cover bg-center bg-[url(././Img/banner3-1.png)]">
+<section className="relative bg-cover bg-[url(././Img/banner3-1.png)] bg-center bg-custom-large sm:bg-custom-small">
       <div className="absolute inset-0 bg-black opacity-35"></div>
       <div className="relative mx-auto max-w-screen-xl lg:flex lg:h-screen lg:items-center">
-        <div className="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right text-white lg:mr-auto">
-          <h1 className="text-3xl font-extrabold sm:text-5xl">{Titulo}</h1>
-          <br/>
-          <br/>
-          <br/>
-          <h3 className="text-2xl sm:text-2xl">{SubTitulo}</h3>
-          <p className="mt-4 max-w-lg sm:text-xl/relaxed">{Descripcion}</p>
-        </div>
+      <div className="max-w-xl text-center sm:text-left text-white lg:mr-auto">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">{Titulo}</h1>
+        <br/>
+        <br/>
+        <br/>
+        <h3 className="text-lg sm:text-xl md:text-2xl">{SubTitulo}</h3>
+        <p className="mt-4 max-w-lg text-sm sm:text-base md:text-lg lg:text-xl">{Descripcion}</p>
+      </div>
+
         <div className="lg:ml-auto">
           <form className="p-8 rounded-lg max-w-md mx-auto">
             <div className="mb-4">
