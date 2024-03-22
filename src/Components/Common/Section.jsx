@@ -3,11 +3,24 @@ import React, { useEffect, useRef, useState } from "react";
 const Section = ({ Titulo, Blanco, Descripcion, Buton, img }) => {
   const [secondLineTop, setSecondLineTop] = useState(0);
   const secondLineRef = useRef(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const topPosition = secondLineRef.current.offsetTop;
     setSecondLineTop(topPosition);
-  }, []);
+  }, [windowWidth]);
 
   return (
     <section
@@ -54,7 +67,7 @@ const Section = ({ Titulo, Blanco, Descripcion, Buton, img }) => {
         </div>
       </div>
       {/* Segunda línea blanca debajo de las secciones */}
-      <div ref={secondLineRef} className="w-full h-px bg-white mt-28"></div>
+      <div ref={secondLineRef} className={`w-full h-px bg-white mt-28 ${windowWidth <= 640 && 'hidden'}`}></div>
 
       {Titulo ==="OUR HISTORY" ? <div className="py-24 justify-center border-b-2 border-y-white">
         <h1 className="text-4xl font-bold text-center text-white">
@@ -66,3 +79,5 @@ const Section = ({ Titulo, Blanco, Descripcion, Buton, img }) => {
 };
 
 export default Section;
+
+

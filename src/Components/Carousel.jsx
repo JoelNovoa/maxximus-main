@@ -10,7 +10,17 @@ import Corousel4 from "../Img/Corouse4.png";
 const Carousel = () => {
     return (
         <div className=" bg-[#0A182E]">
-            
+            <br/>
+            <br/>
+            <br/>
+            <div className="bg-[#0A182E] relative flex items-center justify-center">
+            {/* Línea izquierda */}
+            <div className="absolute left-32 h-48 bg-white w-px hidden sm:block"></div>
+            {/* Título */}
+            <h1 className="text-3xl text-white font-extrabold sm:text-5xl text-center">EVENTS</h1>
+            {/* Línea derecha */}
+            <div className="absolute right-36 h-48 bg-white w-px hidden sm:block"></div>
+            </div>
         <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
             {/* Carousel for desktop and large size devices */}
             <CarouselProvider className="lg:block hidden ml-28" naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={3} visibleSlides={2} step={1} infinite={true}>

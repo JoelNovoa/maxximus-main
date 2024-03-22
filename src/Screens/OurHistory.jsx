@@ -5,6 +5,7 @@ import SectionOur2 from "../Components/Common/SectionOur2";
 import Section from "../Components/Common/Section";
 import Confident from "../Img/confident.png";
 import Footer from "../Components/Common/Fotter";
+import SectionHome from "../Components/SeccionHome"
 
 const OurHistory = () => {
     return (
@@ -32,13 +33,13 @@ const OurHistory = () => {
             SubTitulo={"VISION"}
             SubDescripcion={"Empowering the Modern Agent."}
         />
-        <Section
-            Blanco={false}
-            Titulo={"CONFIDENTLY LEAD THE WAY"}
-            Descripcion={
-            "Maxximum Realty is a forward-thinking real estate company that empowers agents to lead the way in the industry. We provide the tools, technology, and support to help agents grow their business and succeed in the digital age. Our agents are confident, knowledgeable, and ready to lead the way in the real estate industry."}
-            img={Confident}
-            Buton={false}
+        <SectionHome
+                    Blanco={false}
+                    Titulo={"CONFIDENTLY LEAD THE WAY"}
+                    Descripcion={
+                    "Maxximum Realty is a forward-thinking real estate company that empowers agents to lead the way in the industry. We provide the tools, technology, and support to help agents grow their business and succeed in the digital age. Our agents are confident, knowledgeable, and ready to lead the way in the real estate industry."}
+                    img={Confident}
+                    Buton={false}
         />
         <Footer />
         </div>

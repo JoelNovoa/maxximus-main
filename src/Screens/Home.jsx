@@ -10,6 +10,7 @@ import Carousel from "../Components/Carousel";
 import Banner from "../Img/banner-8.png";
 import SectionForm from "../Components/Common/SectionForm";
 import Sliderheader from "../Components/SliderHeader";
+import SeccionHome from  "../Components/SeccionHome"
 
 const Home = () => {
   return (
