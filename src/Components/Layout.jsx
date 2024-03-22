@@ -1,31 +1,33 @@
 import React from "react";
-import Employes from "../Img/employees1.png";
-import Phone from "../Img/megaphone1.png";
-import Tech from "../Img/technology1.png";
 
 const Layout = () => {
   return (
-    <div className="justify-center border-b-2 border-y-white">
-      <div className="bg-[#0A182E] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 col-span-2">
-        {/* Primer elemento */}
-        <div className="text-white p-6 rounded-lg shadow-md flex items-end justify-center">
-          <div>
-            <h2 className="text-xl font-bold mb-2 text-left">
-              Our most lucrative 100% commission plan
-            </h2>
-          </div>
+    <div className="justify-center border-b-2 border-y-white pt-0 pb-0 bg-[#0A182E] text-white">
+      <div className="p-6 rounded-lg shadow-md flex justify-center items-center">
+        {/* Texto 1 */}
+        <div className="ml-52"> {/* Agregamos margen a la derecha */}
+          <h2 className="text-3xl font-bold">
+            Our most lucrative 100% commission plan
+          </h2>
         </div>
-        {/* Segundo elemento */}
-        <div className="text-white w-2/4 p-4 rounded-lg shadow-md flex items-center justify-end">
-          <div className="mt-8 flex flex-wrap gap-4 justify-end">
-            <a href="#" className="underline text-xl font-bold mb-2 text-left">
-              Learn More
-            </a>
-            <span> &gt;</span>
-          </div>
+        {/* Separador */}
+        <div className="w-4"></div> {/* Agregamos un espacio de 4px entre los textos */}
+        {/* Texto 2 */}
+        <div className="mt-1 flex flex-wrap gap-4 justify-end ml-52"> {/* Agregamos margen a la izquierda */}
+          <a href="#" className="underline text-1xl">
+            Learn More
+          </a>
+          <span> &gt;</span>
         </div>
       </div>
     </div>
   );
 };
+
 export default Layout;
+
+
+
+
+
+
