@@ -43,30 +43,30 @@ const Sliderheader = () => {
                 </div>
                 </div>
             ))}
-<button
-    type="button"
-    style={{ position: 'absolute', bottom: '20px', right: '10px', zIndex: '30', borderRadius: '50%', padding: '10px' }}
-    data-carousel-prev
-    onClick={goToPrevSlide}
->
-    <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100px', height: '100px'}}>
-        <svg className="w-6 h-6 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
-        </svg>
-    </span>
-</button>
-<button
-    type="button"
-    style={{ position: 'absolute', bottom: '20px', right: '60px', zIndex: '30', borderRadius: '50%', padding: '10px' }}
-    data-carousel-next
-    onClick={goToNextSlide}
->
-    <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100px', height: '100px' }}>
-        <svg className="w-6 h-6 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
-        </svg>
-    </span>
-</button>
+            <button
+                type="button"
+                style={{ position: 'absolute', bottom: '20px', right: '10px', zIndex: '30', borderRadius: '50%', padding: '10px' }}
+                data-carousel-prev
+                onClick={goToPrevSlide}
+            >
+                <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100px', height: '100px'}}>
+                    <svg className="w-6 h-6 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </span>
+            </button>
+            <button
+                type="button"
+                style={{ position: 'absolute', bottom: '20px', right: '60px', zIndex: '30', borderRadius: '50%', padding: '10px' }}
+                data-carousel-next
+                onClick={goToNextSlide}
+            >
+                <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100px', height: '100px' }}>
+                    <svg className="w-6 h-6 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                </span>
+            </button>
 
 
 

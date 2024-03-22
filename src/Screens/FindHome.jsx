@@ -17,33 +17,39 @@ const FindHome = () => {
     <h1 className="text-4xl font-bold">Find a Home</h1>
   </div>
   <div className="w-full text-white">
-    <form className="flex flex-col sm:flex-row items-center justify-center">   
-      <select className="outline-none select select-bordered w-full max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65 rounded-s-4xl mb-4 sm:mb-0 ">    
+    <form className="flex flex-col sm:flex-row items-center justify-center">
+      <select className="outline-none select select-bordered w-full max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65 rounded-s-4xl mb-4 sm:mb-0">
         <option disabled selected>
-        <FontAwesomeIcon icon={faCoffee} />
-        
           Type of house
         </option>
         <option>Han Solo</option>
         <option>Greedo</option>
       </select>
-      <select className="outline-none select select-bordered w-full max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65 mb-4 sm:mb-0 ">
-        <option disabled selected>
-          Range
+      <select className={`outline-none select select-bordered w-full max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65 mb-4 sm:mb-0 ${window.innerWidth < 640 ? 'rounded-full' : ''}`}>
+      <option disabled selected>
+        Range
+      </option>
+      <option>Han Solo</option>
+      <option>Greedo</option>
+    </select>
 
-        </option>
-        <option>Han Solo</option>
-        <option>Greedo</option>
-      </select>
-      <div class="relative w-full max-w-lg flex items-center">
-        <input type="search" name="search" placeholder="City, Neighborhood, ZIP, Address" class="bg-[#14253E] opacity-65 w-full pl-4 py-4 sm:py-8 rounded-r-4xl focus:outline-none"/>
-        <button type="submit" class="absolute right-0 top-0 px-16 py-4 sm:py-8 rounded-4xl bg-[#0A182E] text-white" >
+
+      <div className="w-full max-w-lg flex flex-col sm:flex-row items-center">
+      <input 
+  type="search" 
+  name="search" 
+  placeholder="City, Neighborhood, ZIP, Address" 
+  className="bg-[#14253E] opacity-65 w-5/6 sm:w-full pl-4 py-4 sm:py-8 sm:rounded-r-4xl focus:outline-none mb-4 sm:mb-0 rounded-full"
+/>  
+      <button type="submit" className="w-full sm:w-auto px-16 py-4 sm:py-8 rounded-l-none sm:rounded-l-4xl rounded-4xl sm:rounded-4xl bg-[#0A182E] text-white">
           Search
         </button>
       </div>
     </form>
   </div>
 </section>
+
+
 
 
       <section className="bg-[#0A182E] text-white h-full">
