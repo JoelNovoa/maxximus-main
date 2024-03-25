@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header1 from '../Img/banner1.png';
 import Header2 from '../Img/Header2.png';
 import Header3 from '../Img/Header3.png';
+import Slide from '../Img/slider3.png';
 
 const Sliderheader = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,17 +26,18 @@ const Sliderheader = () => {
                     </div>
                     <div className="absolute inset-0 flex flex-col justify-center items-center lg:items-start sm:mx-auto md:mx-4 lg:ml-32">
                 <div className="text-white max-w-xl text-center lg:text-left">
-                    <h1 className="text-3xl lg:text-5xl font-extrabold overflow-hidden text-ellipsis sm:w-full">
-                        Become the modern agent
-                    </h1>
+                <h1 className="text-2xl lg:text-5xl sm:text-sm font-extrabold overflow-hidden text-ellipsis sm:w-full">
+                    Become the modern agent
+                </h1>
                     <br/>
-                    <p className="mt-4 max-w-lg sm:text-sm md:text-base lg:text-lg text-white text-center lg:text-left">
+                    <p className="mt-4 max-w-lg sm:text-sm md:text-base lg:text-lg text-white text-center lg:text-left hidden lg:block">
                         Welcome to Maxximum Realty where we revolutionize real estate marketing with innovative strategies that attract listings and buyers. Our approach redefines the lender-realtor relationship, fostering collaboration beyond the mortgage transaction.
                     </p>
+
                     <div className="mt-4 lg:mt-8 flex gap-4 justify-center lg:justify-start sm:mr-0 lg:mr-4">
                         <a
                             href="#"
-                            className="block rounded-full bg-white px-12 py-1 text-sm font-medium text-black shadow hover:bg-gray-200 focus:outline-none focus:bg-gray-200"
+                            className="block rounded-full bg-white mb-6 px-12 py-1 text-sm font-medium text-black shadow hover:bg-gray-200 focus:outline-none focus:bg-gray-200"
                             style={{ borderRadius: "999px" }} 
                         >
                             Learn More

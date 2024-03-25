@@ -9,7 +9,7 @@ const SectionOur2 = ({ Titulo, Descripcion, SubTitulo, SubDescripcion }) => {
         <div className="container mx-auto px-6">
           <div className="lg:flex justify-between items-center">
             <div className="lg:w-6/12 lg:p-0 p-7 mx-auto">
-              <h1 className="text-4xl font-bold leading-tight mb-5 capitalize">{Titulo}</h1>
+              <h1 className="text-4xl font-bold leading-tight mb-12 capitalize">{Titulo}</h1>
               <p className="text-xl">{Descripcion}</p>
               <br />
               <h1 className="text-4xl font-bold leading-tight mb-5 capitalize">{SubTitulo}</h1>
