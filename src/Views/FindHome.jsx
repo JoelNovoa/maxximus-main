@@ -2,7 +2,7 @@ import React from "react";
 import { FaBath, FaBed } from "react-icons/fa";
 import { TbBrandWindows } from "react-icons/tb";
 import Footer from "../Components/Common/Fotter";
-import Vector from "../Img/Vector.png";
+import Vector from "../Assets/Img/Vector.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
@@ -12,7 +12,7 @@ const FindHome = () => {
 
   return (
     <>
-<section className="bg-[url(./Img/banner1.png)] h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center">
+<section className="bg-[url(./Assets/Img/banner1.png)] h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center">
   <div className="text-center text-white mb-8">
     <h1 className="text-4xl font-bold">Find a Home</h1>
   </div>

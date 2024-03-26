@@ -1,9 +1,9 @@
 import React from "react";
-import SectionForm from "../Components/Common/SectionForm";
-import Cards from "../Components/Cards";
+import SectionForm from "../Components/Reusable/SectionForm";
+import Cards from "../Components/Reusable/Cards";
 import Footer from "../Components/Common/Fotter";
-import Map from "../Components/Map";
-import SectionForm2 from "../Components/Common/SectionForm2";
+import Map from "../Components/Common/Map";
+import SectionForm2 from "../Components/Reusable/SectionForm2";
 
 const FindRealtor = () => {
   return (

@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "../Components/Common/Header";
-import SectionOur from "../Components/Common/SectionOur";
-import SectionOur2 from "../Components/Common/SectionOur2";
-import Section from "../Components/Common/Section";
-import Confident from "../Img/confident.png";
+import Header from "../Components/Reusable/Header";
+import SectionOur from "../Components/Reusable/SectionOur";
+import SectionOur2 from "../Components/Reusable/SectionOur2";
+import Section from "../Components/Reusable/Section";
+import Confident from "../Assets/Img/confident.png";
 import Footer from "../Components/Common/Fotter";
-import SectionHome from "../Components/SeccionHome"
+import SectionHome from "../Components/Reusable/SeccionHome"
 
 const OurHistory = () => {
     return (
         <div className="text-Maxximun-Blanco">
-        <Header img={"bg-[url(./Img/banner-4.png)]"} 
+        <Header img={"bg-[url(./Assets/Img/banner-4.png)]"} 
         Titulo={"Our Story"}
         Descripcion={"At Maxximum Realty, we're pioneers in the real estate industry, harnessing the power of AI and the latest technologies to revolutionize the agent experience."}
         Buton={false}

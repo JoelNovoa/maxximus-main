@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import maxximum from "../Img/maxximum.png";
+import maxximum from "../../Assets/Img/maxximum.png";
 
 const NavBar = () => {
   const links = [
@@ -36,11 +36,11 @@ const NavBar = () => {
       <div
         className={
           !isMenuOpen
-            ? "flex relative py-10 items-center w-full px-4 justify-between bg-[#0A182E] z-10"
-            : "flex fixed flex-col h-full items-center w-full px-4 justify-around bg-[#0A182E]/[.8] z-10"
+            ? "flex relative py-10 items-center w-full px-4 justify-between bg-[#0A182E] z-1000"
+            : "flex fixed flex-col h-full items-center w-full px-4 justify-around bg-[#0A182E]/[.8] z-1000"
         }
       >
-        <div className="justify-items-center ml-8 w-2/7">
+        <div className="justify-items-center w-2/7 lg:ml-12 ">
           <Link to="/">
             <img
               src={maxximum}
@@ -53,7 +53,7 @@ const NavBar = () => {
           <div className="w-3/7  text-center ">
             {links.map((route) => (
               <Link
-                className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins ml-7"
+                className="text-xl text-Maxximum-Blanco font-Poppins ml-7 transition duration-300 ease-in-out hover:text-gray-300 hover:font-semibold"
                 to={route.link}
                 key={route.id}
               >
@@ -66,7 +66,7 @@ const NavBar = () => {
             {isMenuOpen &&
               links.map((route) => (
                 <Link
-                  className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins mb-4"
+                  className="text-xl text-Maxximum-Blanco font-Poppins mb-4"
                   to={route.link}
                   key={route.id}
                   onClick={() => setIsMenuOpen(false)}
@@ -78,13 +78,14 @@ const NavBar = () => {
               <>
                 <Link
                   to="/events"
-                  className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins mb-4"
+                  className="text-xl text-Maxximum-Blanco font-Poppins mb-4"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Events
                 </Link>
                 <Link
                   to="/realtor"
-                  className="text-xl text-Maxximum-Blanco rounded-4xl bg-white text-black px-9 hover:font-bold font-Poppins mb-4"
+                  className="text-xl text-Maxximum-Blanco rounded-4xl bg-white text-black px-9 font-Poppins mb-4"
                 >
                   Join Our Team
                 </Link>
@@ -114,7 +115,7 @@ const NavBar = () => {
             <div className="flex w-1/7 text-center">
               <Link
                 to="/events"
-                className="text-xl text-Maxximum-Blanco hover:font-bold font-Poppins ml-32"
+                className="text-xl text-Maxximum-Blanco font-Poppins ml-32 hover:text-gray-300 hover:font-semibold"
               >
                 Events
               </Link>
@@ -122,7 +123,7 @@ const NavBar = () => {
             <div className="flex w-1/7 text-center">
               <Link
                 to="/realtor"
-                className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-32"
+                className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-32 "
               >
                 Join Our Team
               </Link>
@@ -135,6 +136,8 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
 
 
 

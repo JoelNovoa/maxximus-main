@@ -1,9 +1,9 @@
 import React from "react";
-import maxximu from "../../Img/maxximum.png";
-import Phone from "../../Img/phone.png";
-import mail from "../../Img/mail-01.png";
-import marker from "../../Img/marker-pin-01.png";
-import User from "../../Img/image-user.png";
+import maxximu from "../../Assets/Img/maxximum.png";
+import Phone from "../../Assets/Img/phone.png";
+import mail from "../../Assets/Img/mail-01.png";
+import marker from "../../Assets/Img/marker-pin-01.png";
+import User from "../../Assets/Img/image-user.png";
 
 const Footer = () => {
   return (

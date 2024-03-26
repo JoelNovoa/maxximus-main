@@ -1,16 +1,15 @@
 import React from "react";
-import DynamicButton from "../Components/Buttons";
-import Header from "../Components/Common/Header";
-import Section from "../Components/Common/Section";
+import Header from "../Components/Reusable/Header";
+import Section from "../Components/Reusable/Section";
 import Fotter from "../Components/Common/Fotter";
-import Mask from "../Img/MaskGroup.png";
-import Layout from "../Components/Layout";
+import Mask from "../Assets/Img/MaskGroup.png";
+import Layout from "../Components/Common/Layout";
 import Footer from "../Components/Common/Fotter";
-import Carousel from "../Components/Carousel";
-import Banner from "../Img/banner-8.png";
-import SectionForm from "../Components/Common/SectionForm";
-import Sliderheader from "../Components/SliderHeader";
-import SeccionHome from  "../Components/SeccionHome"
+import Carousel from "../Components/Reusable/Carousel";
+import Banner from "../Assets/Img/banner-8.png";
+import SectionForm from "../Components/Reusable/SectionForm";
+import Sliderheader from "../Components/Reusable/SliderHeader";
+import SeccionHome from  "../Components/Reusable/SeccionHome"
 
 const Home = () => {
   return (
