@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useWindowSize, useMenuToggle } from "../../Controllers/NavBarController";
 import maxximum from "../../Assets/Img/maxximum.png";
 
 const NavBar = () => {
@@ -10,26 +11,9 @@ const NavBar = () => {
     { link: "find-home", text: "Find a Home", id: 3 },
     { link: "find-realtor", text: "Find a Realtor", id: 4 },
   ];
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [windowDimensions, setWindowDimensions] = useState({
-    innerHeight: window.innerHeight,
-    innerWidth: window.innerWidth,
-  });
 
-  const detecSize = () => {
-    setWindowDimensions({
-      innerHeight: window.innerHeight,
-      innerWidth: window.innerWidth,
-    });
-    // Cierra el menú al cambiar de tamaño de pantalla
-    setIsMenuOpen(false);
-  };
-  useEffect(() => {
-    window.addEventListener("resize", detecSize);
-    return () => {
-      window.removeEventListener("resize", detecSize);
-    };
-  }, []);
+  const windowDimensions = useWindowSize();
+  const { isMenuOpen, toggleMenu } = useMenuToggle();
 
   return (
     <div className="sticky top-0 z-10 bg-[#0A182E]">
@@ -69,7 +53,7 @@ const NavBar = () => {
                   className="text-xl text-Maxximum-Blanco font-Poppins mb-4"
                   to={route.link}
                   key={route.id}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => toggleMenu()}
                 >
                   {route.text}
                 </Link>
@@ -79,7 +63,7 @@ const NavBar = () => {
                 <Link
                   to="/events"
                   className="text-xl text-Maxximum-Blanco font-Poppins mb-4"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => toggleMenu()}
                 >
                   Events
                 </Link>
@@ -97,14 +81,14 @@ const NavBar = () => {
                   cursor="pointer"
                   size={24}
                   color="white"
-                  onClick={() => setIsMenuOpen(true)}
+                  onClick={() => toggleMenu()}
                 />
               ) : (
                 <AiOutlineClose
                   cursor="pointer"
                   size={24}
                   color="white"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => toggleMenu()}
                 />
               )}
             </div>
@@ -136,6 +120,7 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
 
 
 

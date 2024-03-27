@@ -7,6 +7,7 @@ import Header2 from "../Components/Reusable/Header2";
 import LogIn from "../Components/Common/LogIn";
 import CreateAccount from "../Components/Common/CreateAccount";
 import Sliderheader from "../Components/Reusable/SliderHeader";
+import ImageUtils from "../Controllers/ImageUtils";
 
 const Events = () => {
   return (

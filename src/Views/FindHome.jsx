@@ -5,6 +5,8 @@ import Footer from "../Components/Common/Fotter";
 import Vector from "../Assets/Img/Vector.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import FindHomeController from "../Controllers/FindHomeController";
+
 
 
 const FindHome = () => {
@@ -12,7 +14,8 @@ const FindHome = () => {
 
   return (
     <>
-<section className="bg-[url(./Assets/Img/banner1.png)] h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center">
+    <div className="bg-[#0A182E]">
+<section className="bg-[url(./Assets/Img/banner1.png)] h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center bg-[#0A182E]">
   <div className="text-center text-white mb-8">
     <h1 className="text-4xl font-bold">Find a Home</h1>
   </div>
@@ -43,60 +46,9 @@ const FindHome = () => {
               </form>
             </div>
           </section>
+          <FindHomeController arrayCard={arrayCard} />
 
-
-
-
-      <section className="bg-[#0A182E] text-white h-full">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center py-20">
-            Featured Properties
-          </h2>
-          {/* Card Component Bordered with Image, Price, Content and Details */}
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-20 sm:mx-auto">
-            {arrayCard.map(() => {
-              return (
-                <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white mt-10 border border-white">
-                <img
-                    className="w-full"
-                    src="https://arquitectopablorestrepo.com/wp-content/uploads/2022/03/Dise%C3%B1o-casa-familiar-el-bambu-3-800x600.jpg"
-                    alt="Sunset in the mountains"
-                  />
-                  <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2 text-black">
-                      $1,000,000
-                    </div>
-                    <p className="text-gray-700 text-base">
-                      Lorem ipsum dolor
-                      <br />
-                      consectetur adipisicin.
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-3 py-6 px-4">
-                    <div className="text-black items-center grid grid-cols-2 justify-self-center">
-                      <FaBed className="text-black text-2xl" />
-                      <p className="text-md">3</p>
-                      Beds
-                    </div>
-                    <div className="text-black items-center grid grid-cols-2 justify-self-center">
-                      <FaBath className="text-black text-2xl pb-1" />
-                      <p className="text-md">3</p>
-                      Baths
-                    </div>
-                    <div className="text-black items-center grid grid-cols-2 justify-self-center">
-                      <TbBrandWindows className="text-black text-2xl justify-self-center" />
-                      <p className="text-sm">5,821sqtf</p>
-                      <p className="text-sm min-w-max pl-5">(on 0.62 acres)</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              );
-            })}
           </div>
-        </div>
-      </section>
       <Footer />
     </>
   );
