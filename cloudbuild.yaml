@@ -1,5 +1,10 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'  # Imagen para construir la imagen Docker
-  args: ['build', '-t', 'gcr.io/$complete-rush-418016/maxximusimg:latest', '.']  # Construye la imagen y la etiqueta
-- name: 'gcr.io/cloud-builders/gcloud'  # Imagen para desplegar en Cloud Run
-  args: ['run', 'deploy', 'maxximus', '--image', 'gcr.io/$complete-rush-418016/maxximusimg:latest', '--region', 'us-east1', '--platform', 'managed']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/maxximus-website/maxximusimg:latest', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/maxximus-website/maxximusimg:latest']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['run', 'deploy', 'maxximus-website', '--image', 'gcr.io/maxximus-website/maxximusimg:latest', '--region', 'us-east1', '--platform', 'managed']
+
+images:
+- 'gcr.io/maxximus-website/maxximusimg:latest' 
