@@ -1,6 +1,6 @@
 import React from "react";
 import Credentials from "./Credentials";
-import maps from "../Img/Screenshot.png";
+import maps from "../../Assets/Img/Screenshot.png";
 
 const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${Credentials.mapsKey}`;
 

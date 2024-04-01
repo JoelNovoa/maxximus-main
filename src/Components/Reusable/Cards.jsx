@@ -1,6 +1,6 @@
 import React from 'react';
-import Cards1 from "../Img/Desiree1.png";
-import Cards2 from "../Img/max1.png";
+import Cards1 from "../../Assets/Img/Desiree1.png";
+import Cards2 from "../../Assets/Img/max1.png";
 
 const Cards = () => { 
     return (

@@ -1,16 +1,15 @@
 
 import './App.css';
 import React from 'react';
-import Home from './Screens/Home';
-import Events from './Screens/Events';
-import OurHistory from './Screens/OurHistory';
-import FindRealtor from './Screens/FindRealtor';
-import FindHome from './Screens/FindHome';
-import NavBar from './Components/Navbar';
-import Realtor from './Screens/Realtor';
+import Home from './Views/Home';
+import Events from './Views/Events';
+import OurHistory from './Views/OurHistory';
+import FindRealtor from './Views/FindRealtor';
+import FindHome from './Views/FindHome';
+import NavBar from './Components/Common/Navbar';
+import Realtor from './Views/Realtor';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import DynamicButton from './Components/Buttons';
 function App() {
   return (
   <div className="flex flex-col">

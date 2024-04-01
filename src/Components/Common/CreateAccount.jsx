@@ -1,5 +1,5 @@
-import react from 'react';
-import Agente1 from '../Img/agent1.png';
+import React from 'react';
+import Agente1 from '../../Assets/Img/agent1.png';
 
 const CreateAccount = () => {
     return (

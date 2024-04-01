@@ -1,29 +1,18 @@
-import react from "react";
+import React from "react";
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import Corousel1 from "../Img/Corousel1.png";
-import Corousel2 from "../Img/Corousel2.png";
-import Corousel3 from "../Img/Corousel3.png";
-import Corousel4 from "../Img/Corouse4.png";   
+import Corousel1 from "../../Assets/Img/Corousel1.png";
+import Corousel2 from "../../Assets/Img/Corousel2.png";
+import Corousel3 from "../../Assets/Img/Corousel3.png";
+import Corousel4 from "../../Assets/Img/Corouse4.png";   
 
-const Carousel = () => {
+const Courosel2 = () => {
     return (
-        <div className=" bg-[#0A182E]">
-            <br/>
-            <br/>
-            <br/>
-            <div className="bg-[#0A182E] relative flex items-center justify-center">
-            {/* Línea izquierda */}
-            <div className="absolute left-32 h-48 bg-white w-px hidden sm:block"></div>
-            {/* Título */}
-            <h1 className="text-3xl text-white font-extrabold sm:text-5xl text-center">EVENTS</h1>
-            {/* Línea derecha */}
-            <div className="absolute right-36 h-48 bg-white w-px hidden sm:block"></div>
-            </div>
+        <div className=" bg-white">
         <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
             {/* Carousel for desktop and large size devices */}
-            <CarouselProvider className="lg:block hidden ml-28" naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={3} visibleSlides={2} step={1} infinite={true}>
+            <CarouselProvider className="lg:block hidden ml-32 " naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={3} visibleSlides={2} step={1} infinite={true}>
                 <div className="w-full relative flex items-center justify-center">
                 <ButtonBack
                         role="button"
@@ -99,7 +88,7 @@ const Carousel = () => {
                     <ButtonNext
                         role="button"
                         aria-label="slide forward"
-                        className="absolute  right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 p-6 rounded-full"
+                        className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 p-6 rounded-full"
                         id="next"
                         style={{ backgroundColor: 'white',  borderRadius: '50%' }}
                     >
@@ -134,13 +123,12 @@ const Carousel = () => {
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                                             <img src={Corousel2} alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute inset-0 flex flex-col justify-center items-center p-6">
-                                                <h1 className="lg:text-xl leading-8  text-white font-bold">Real State 24</h1>
-                                                <h3 className="text-white font-light">Event for real estate</h3>
-                                                <h1 className="lg:text-xl leading-4 text-white font-bold">2024</h1>
-                                                <br />
+                                                <h1 className="lg:text-xl leading-4 text-white">Real State 24</h1>
+                                                <h3 className="text-white">Event for real estate</h3>
+                                                <h1 className="lg:text-xl leading-4 text-white">2024</h1>
                                                 <a
                                                     href="#"
-                                                    className="block w-full rounded-4xl bg-white px-12 py-3 text-sm font-medium text-black shadow focus:outline-none focus:rin sm:w-auto"
+                                                    className="mt-4 block w-full max-w-xs rounded-xl bg-white px-12 py-3 text-sm font-medium text-black shadow sm:w-auto text-center"
                                                 >
                                                     More Info
                                                 </a>
@@ -200,13 +188,12 @@ const Carousel = () => {
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                                             <img src={Corousel2} alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute inset-0 flex flex-col justify-center items-center p-6">
-                                                <h1 className="lg:text-xl leading-8  text-white font-bold">Real State 24</h1>
-                                                <h3 className="text-white font-light">Event for real estate</h3>
-                                                <h1 className="lg:text-xl leading-4 text-white font-bold">2024</h1>
-                                                <br />
+                                                <h1 className="lg:text-xl leading-4 text-white">Real State 24</h1>
+                                                <h3 className="text-white">Event for real estate</h3>
+                                                <h1 className="lg:text-xl leading-4 text-white">2024</h1>
                                                 <a
                                                     href="#"
-                                                    className="block w-full rounded-4xl bg-white px-12 py-3 text-sm font-medium text-black shadow focus:outline-none focus:rin sm:w-auto"
+                                                    className="mt-4 block w-full max-w-xs rounded-xl bg-white px-12 py-3 text-sm font-medium text-black shadow sm:w-auto text-center"
                                                 >
                                                     More Info
                                                 </a>
@@ -246,4 +233,4 @@ const Carousel = () => {
 
     );
 }
-export default Carousel;
+export default Courosel2;

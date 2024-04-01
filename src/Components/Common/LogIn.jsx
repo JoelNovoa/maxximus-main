@@ -1,5 +1,5 @@
 import React from "react";
-import Agente1 from "../Img/agent1.png";
+import Agente1 from "../../Assets/Img/agent1.png";
 
 const LogIn = () => {
     return (
