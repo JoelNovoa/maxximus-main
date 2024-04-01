@@ -7,7 +7,7 @@ const FindHomeController = ({ arrayCard }) => {
   return (
     <div className="container mx-auto bg-[#0A182E] flex flex-col justify-center items-center">
       <h2 className="text-4xl font-bold text-center text-white py-20">
-        Featured Properties
+        Explore Our Communities
       </h2>
       <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 gap-12 py-20 sm:mx-auto">
         {arrayCard.map((item, index) => (

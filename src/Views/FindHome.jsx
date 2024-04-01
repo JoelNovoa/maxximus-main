@@ -2,10 +2,11 @@ import React from "react";
 import { FaBath, FaBed } from "react-icons/fa";
 import { TbBrandWindows } from "react-icons/tb";
 import Footer from "../Components/Common/Fotter";
-import Vector from "../Assets/Img/Vector.png";
+import Home from "../Assets/Img/Vector.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import FindHomeController from "../Controllers/FindHomeController";
+
 
 
 

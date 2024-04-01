@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useWindowSize, useMenuToggle } from "../../Controllers/NavBarController";
@@ -11,6 +11,8 @@ const NavBar = () => {
     { link: "find-home", text: "Find a Home", id: 3 },
     { link: "find-realtor", text: "Find a Realtor", id: 4 },
   ];
+
+  const [active , setActive] = useState(0);
 
   const windowDimensions = useWindowSize();
   const { isMenuOpen, toggleMenu } = useMenuToggle();
@@ -33,13 +35,14 @@ const NavBar = () => {
             />
           </Link>
         </div>
-        {windowDimensions.innerWidth > 768 ? (
+        {windowDimensions.innerWidth > 1200 ? (
           <div className="w-3/7  text-center ">
-            {links.map((route) => (
+            {links.map((route, index) => (
               <Link
-                className="text-xl text-Maxximum-Blanco font-Poppins ml-7 transition duration-300 ease-in-out hover:text-gray-300 hover:font-semibold"
-                to={route.link}
+              className={active === index ? "text-2xl text-Maxximum-Blanco font-bold lg:ml-7" : "text-xl text-white font-Poppins-semiBold lg:ml-7"}
+              to={route.link}
                 key={route.id}
+                onClick={() => setActive(index)}
               >
                 {route.text}
               </Link>
@@ -94,12 +97,14 @@ const NavBar = () => {
             </div>
           </>
         )}
-        {windowDimensions.innerWidth > 768 && (
+        {windowDimensions.innerWidth > 1200 && (
           <>
             <div className="flex w-1/7 text-center">
               <Link
                 to="/events"
-                className="text-xl text-Maxximum-Blanco font-Poppins ml-32 hover:text-gray-300 hover:font-semibold"
+                className={active === 4 ? "text-2xl text-Maxximum-Blanco font-bold ml-7" : "text-xl text-white font-Poppins-semiBold ml-7"}
+                onClick={() => setActive(4)}
+
               >
                 Events
               </Link>
@@ -107,7 +112,7 @@ const NavBar = () => {
             <div className="flex w-1/7 text-center">
               <Link
                 to="/realtor"
-                className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl px-5 font-Poppins ml-32 "
+                className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl py-3 px-12 font-bold ml-32 "
               >
                 Join Our Team
               </Link>
