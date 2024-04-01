@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/maxximus-main/static/css/main.7c44443e.css",
+    "main.js": "/maxximus-main/static/js/main.9a6c2a78.js",
+    "static/js/453.82b0165c.chunk.js": "/maxximus-main/static/js/453.82b0165c.chunk.js",
+    "static/media/banner-5.png": "/maxximus-main/static/media/banner-5.d0f727687b97169269cd.png",
+    "static/media/banner-4.png": "/maxximus-main/static/media/banner-4.efd99886cb63aa3c3892.png",
+    "static/media/personas.png": "/maxximus-main/static/media/personas.c01ac0752020320d611b.png",
+    "static/media/banner1.png": "/maxximus-main/static/media/banner1.2e32e065da404ffdf4c7.png",
+    "static/media/banner3-1.png": "/maxximus-main/static/media/banner3-1.2f49a5c8ccf9e977cc6a.png",
+    "static/media/Header2.png": "/maxximus-main/static/media/Header2.eed5afd0effe327408a4.png",
+    "static/media/Header3.png": "/maxximus-main/static/media/Header3.f9539d5e0e5825e11872.png",
+    "static/media/slider3.png": "/maxximus-main/static/media/slider3.8b8f2bc88b81adf04984.png",
+    "static/media/hombre-negocios.png": "/maxximus-main/static/media/hombre-negocios.abe1633c90fcc2ea5948.png",
+    "static/media/Screenshot.png": "/maxximus-main/static/media/Screenshot.c0726f3cefa04140124f.png",
+    "static/media/banner-8.png": "/maxximus-main/static/media/banner-8.35eb70c261d077fd7dd9.png",
+    "static/media/confident.png": "/maxximus-main/static/media/confident.c1887b006d9978f09154.png",
+    "static/media/MaskGroup.png": "/maxximus-main/static/media/MaskGroup.45def629816ba6aeddf4.png",
+    "static/media/Corousel3.png": "/maxximus-main/static/media/Corousel3.743eb880d755a130efd5.png",
+    "static/media/Corousel2.png": "/maxximus-main/static/media/Corousel2.ffdfb60c163eb3a9d373.png",
+    "static/media/Corousel1.png": "/maxximus-main/static/media/Corousel1.c6d9875c5bc82bb6f8ad.png",
+    "static/media/agent1.png": "/maxximus-main/static/media/agent1.190c61496917d47722df.png",
+    "static/media/Ojuju-VariableFont_wght.ttf": "/maxximus-main/static/media/Ojuju-VariableFont_wght.e0dd5da20d6247302e43.ttf",
+    "static/media/Corouse4.png": "/maxximus-main/static/media/Corouse4.41753b2b25df66649e50.png",
+    "static/media/Poppins-Regular.ttf": "/maxximus-main/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Cards2.png": "/maxximus-main/static/media/Cards2.69128911a51c6e3a40e3.png",
+    "static/media/Poppins-SemiBold.ttf": "/maxximus-main/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/maxximus-main/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/Cards1.png": "/maxximus-main/static/media/Cards1.a7dd88e07892a4a4c72c.png",
+    "static/media/max1.png": "/maxximus-main/static/media/max1.32ba7914488203ff5745.png",
+    "static/media/Desiree1.png": "/maxximus-main/static/media/Desiree1.20352f240ab795d3d110.png",
+    "index.html": "/maxximus-main/index.html",
+    "main.7c44443e.css.map": "/maxximus-main/static/css/main.7c44443e.css.map",
+    "main.9a6c2a78.js.map": "/maxximus-main/static/js/main.9a6c2a78.js.map",
+    "453.82b0165c.chunk.js.map": "/maxximus-main/static/js/453.82b0165c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c44443e.css",
+    "static/js/main.9a6c2a78.js"
+  ]
+}
