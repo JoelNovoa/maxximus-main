@@ -1,0 +1,22 @@
+.imageShape{
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 60%;
+}
+.imageShape {
+    width: 100%; /* w-full */
+  }
+  
+  @media (min-width: 1024px) {
+    .imageShape {
+      width: auto; /* lg:w-auto */
+      max-width: 48rem; /* lg:max-w-4xl */
+    }
+  }
+  
+  .imageShape {
+    object-fit: cover; /* object-cover */
+  }
+  
+  .imageShape {
+    margin-left: auto; /* ml-auto */
+  }

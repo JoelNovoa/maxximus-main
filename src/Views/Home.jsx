@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Components/Reusable/Header";
 import Section from "../Components/Reusable/Section";
 import Fotter from "../Components/Common/Fotter";
-import Mask from "../Assets/Img/MaskGroup.png";
+import Mask from "../Assets/Img/SeccionLine.png";
 import Layout from "../Components/Common/Layout";
 import Footer from "../Components/Common/Fotter";
 import Carousel from "../Components/Reusable/Carousel";
@@ -25,7 +25,7 @@ const Home = () => {
        <Layout/>
 
        <Carousel />
-       <Section 
+       <SeccionHome 
        Blanco={true}
        Titulo={"TECHNOLOGY"}
        Descripcion={"Recent years have seen a pivotal shift for salespeople with the surge in online and social media interaction, driven by technology. Embracing this change is positive but demands acquiring new methods and skills. At Maxximum Realty, we excel in adapting to innovative tools and business approaches, ensuring effective execution for success, much like Real Estate Agents in their field."}

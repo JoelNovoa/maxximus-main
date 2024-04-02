@@ -9,9 +9,8 @@ import SectionHome from "../Components/Reusable/SeccionHome"
 
 const OurHistory = () => {
     return (
-        <div className="text-Maxximun-Blanco">
+        <>
         <Header img={"bg-[url(./Assets/Img/banner-4.png)]"} 
-        Titulo={"Our Story"}
         Descripcion={"At Maxximum Realty, we're pioneers in the real estate industry, harnessing the power of AI and the latest technologies to revolutionize the agent experience."}
         Buton={false}
         />
@@ -42,7 +41,8 @@ const OurHistory = () => {
                     Buton={false}
         />
         <Footer />
-        </div>
+        </>
+      
     );
     }
     export default OurHistory;

@@ -9,11 +9,11 @@ import Corousel3 from "../../Assets/Img/Corousel3.png";
 
 const Carousel = () => {
     return (
-        <div className=" bg-[#0A182E]">
+        <div className=" bg-[#002867]">
             <br/>
             <br/>
             <br/>
-            <div className="bg-[#0A182E] relative flex items-center justify-center">
+            <div className="bg-[#002867] relative flex items-center justify-center">
             {/* Línea izquierda */}
             <div className="absolute left-32 h-48 bg-white w-px hidden sm:block"></div>
             {/* Título */}

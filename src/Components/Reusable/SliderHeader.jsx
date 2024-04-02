@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Header1 from '../../Assets/Img/banner1.png';
-import Header2 from '../../Assets/Img/Header2.png';
-import Header3 from '../../Assets/Img/Header3.png';
+import Header1 from '../../Assets/Img/read.png';
+import Header2 from '../../Assets/Img/lady.png';
+import Header3 from '../../Assets/Img/woman.png';
 import Slide from '../../Assets/Img/slider3.png';
 
 const Sliderheader = () => {
@@ -22,29 +22,15 @@ const Sliderheader = () => {
                 <div key={index} className={`ease-linear ${index === currentSlide ? '' : 'hidden'}`} data-carousel-item={index === currentSlide ? 'active' : ''}>
                     <div className="relative w-full h-full">
                         <img src={image} className="w-full h-full object-cover" alt={`Slide ${index + 1}`} />
-                        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
+                        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-5"></div>
                     </div>
-                    <div className="absolute inset-0 flex flex-col justify-center items-center lg:items-start sm:mx-auto md:mx-4 lg:ml-32">
-                <div className="text-white max-w-xl text-center lg:text-left">
-                <h1 className="text-2xl lg:text-5xl sm:text-sm font-extrabold overflow-hidden text-ellipsis  sm:w-full">
-                    Become the modern agent
-                </h1>
-                    <p className="mt-4 max-w-lg sm:text-sm md:text-base lg:text-lg text-white text-center lg:text-left hidden lg:block">
-                        Welcome to Maxximum Realty where we revolutionize real estate marketing with innovative strategies that attract listings and buyers. Our approach redefines the lender-realtor relationship, fostering collaboration beyond the mortgage transaction.
-                    </p>
-
-                    <div className="mt-4 lg:mt-8 flex gap-4 justify-center lg:justify-start sm:mr-0 lg:mr-4">
-                        <a
-                            href="#"
-                            className="block rounded-full bg-white mb-6 px-12 py-1 text-sm font-medium text-black shadow hover:bg-gray-200 focus:outline-none focus:bg-gray-200"
-                            style={{ borderRadius: "999px" }} 
-                        >
-                            Learn More
-                        </a>
-                    </div>
-
+                    <div className="absolute inset-0 flex justify-center items-center lg:items-center lg:text-center lg:w-full sm:mx-auto md:mx-4 ">
+                <div className="text-white">
+                    <h1 className="text-2xl lg:text-5xl sm:text-sm font-extrabold overflow-hidden py-12">
+                    Become the Modern Agent
+                    </h1>
                 </div>
-            </div>
+                </div>
                 </div>
             ))}
             <button
