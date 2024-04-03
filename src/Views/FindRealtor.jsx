@@ -7,7 +7,7 @@ import SectionForm2 from "../Components/Reusable/SectionForm2";
 
 const FindRealtor = () => {
   return (
-    <>
+    <div className="bg-[#002867]">
       <SectionForm2
       Titulo={"Become the modern agent with us"}
       SubTitulo={"Grow Your Business With Maxximun"}
@@ -16,7 +16,7 @@ const FindRealtor = () => {
       <Map/>
       <Cards />
       <Footer />
-    </>
+    </div>
   );
 };
 export default FindRealtor;

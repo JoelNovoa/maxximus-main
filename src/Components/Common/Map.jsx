@@ -1,76 +1,124 @@
 import React from "react";
 import Credentials from "./Credentials";
 import maps from "../../Assets/Img/Screenshot.png";
+import RectanguleCard  from "../../Assets/Img/RectanguleCard.png";
 
 const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${Credentials.mapsKey}`;
 
 const Map = (props) => {
     return (
-        <div className="space-y-4 bg-[#0A182E] min-h-screen flex flex-col">
-            <div className="flex items-center justify-center lg:justify-start lg:ml-12">
-            <div className="mx-auto lg:ml-0 lg:mr-auto md:w-1/2 lg:w-1/3 xl:w-1/4 mt-10">
-            <div class='max-w-md mx-auto'>
-            <div class="flex rounded-4xl bg-white px-2 w-full max-w-[600px]">
-                    <input
-                    type="text"
-                    class="w-full bg-white flex bg-transparent rounded-4xl pl-2 text-black outline-0"
-                    placeholder="Search by Address, City, Zip..."
-                    />
-                    <button type="submit" class="relative p-2 rounded-4xl bg-white rounded-full">
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-            <g id="SVGRepo_iconCarrier"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
-            </svg>
-            </button>
-      </div>
+        <div className="space-y-4 bg-[#002867] min-h-screen flex flex-col">
+            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 mt-12">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white text-center sm:text-4xl md:mx-auto">
+                <span className="relative inline-block">
+                    <svg viewBox="0 0 52 24" fill="currentColor" className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"></svg>
+                    <span className="relative">Join the Family</span>
+                </span>
+            </h2>
             </div>
-            </div>
-            </div>
-           <div className="bg-[#0A182E] mt-10 py-4 h-32 w-full">
-                <h2 className="text-3xl font-bold text-white text-center lg:ml-12 lg:text-left">Locations</h2>
-            </div>
-
-            <div className="flex-grow flex flex-wrap justify-center">
-                <div className="bg-[#0A182E] w-full lg:w-1/2 xl:w-1/3 px-8 py-4">
-                <section className="flex flex-col items-center lg:items-start">
-                <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
-                    <h3 className="text-white">Laguna Hills</h3>
-                    <p className="text-gray-400">Lorem ipsum dolor sit amet,<br/>
-                    consectetur adipiscing elit, <br/>
-                    sed do eiusmod tempor incididunt ut <br/>
-                    labore et dolore magna aliqua.</p>
-                </div>
-                <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
-                    <h3 className="text-white">Orlando</h3>
-                    <p className="text-gray-400">Lorem ipsum dolor sit amet,<br/>
-                    consectetur adipiscing elit, <br/>
-                    sed do eiusmod tempor incididunt ut <br/>
-                    labore et dolore magna aliqua.</p>
-                </div>
-                <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
-                    <h3 className="text-white">Dallas</h3>
-                    <p className="text-gray-400">Lorem ipsum dolor sit amet, <br/>
-                        consectetur adipiscing elit, sed do <br/>
-                        eiusmod tempor incididunt ut <br/>
-                        labore et dolore magna aliqua. </p>
-                </div>
-                <div className="bg-[#0A182E] px-4 py-2 mb-4 max-w-[300px] rounded-2xl">
-                    <h3 className="text-white">Dallas </h3>
-                    <p className="text-gray-400">Lorem ipsum dolor sit amet, <br/>
-                        consectetur adipiscing elit, sed do <br/>
-                        eiusmod tempor incididunt ut <br/>
-                        labore et dolore magna aliqua.</p>
-                </div>
-                </section>
-
-                </div>
-                <div className="bg-[#0A182E] w-full lg:w-1/2 xl:w-2/3 px-8 py-4 mx-auto">
-            <div className="relative w-full h-96">
-                <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-            </div>
-            </div>
+            <div class="flex flex-wrap justify-center mx-auto w-full max-w-4xl mt-8 space-y-8">
+            <div class="flex flex-col flex-grow overflow-hidden bg-[#FFFFFF] rounded-4xl shadow-lg mt-8 mx-4 max-w-sm">
+			<div class="flex flex-col items-center p-10 bg-[#0A182E]">
+            <img
+                  className="h-32 w-32"
+                  src={RectanguleCard}
+                  alt="Property"
+                />
+				<div class="flex items-center">
+				</div>
+			</div>
+			<div class="p-10">
+				<ul>
+                <li class="flex items-center justify-center">
+                    <span class="text-center text-[#0A182E] font-bold">Traditional Real Estate Company
+                    <br/>80 / 20</span>
+                </li>
+					<li class="flex items-center justify-center">
+                    <span class="text-center text-[#0A182E]">Sliding Commission Split
+                    </span>
+					</li>
+					<li class="flex items-center justify-center mt-12">
+                    <span class="text-center text-[#0A182E]">Focus on brand rather than  the professional
+                    </span>
+					</li>
+                    <li class="flex items-center justify-center">
+                    <span class="text-center text-[#0A182E]">Less support
+                    </span>
+					</li>
+				</ul>
+			</div>
+		</div>	
+        <div class="flex flex-col flex-grow overflow-hidden bg-white rounded-lg shadow-lg mt-8 mx-4">
+			<div class="flex flex-col items-center p-10 bg-gray-200">
+				<span class="font-semibold">Jedi Knight</span>
+				<div class="flex items-center">
+					<span class="text-3xl">$</span>
+					<span class="text-6xl font-bold">50</span>
+					<span class="text-2xl text-gray-500">/mo</span>
+				</div>
+			</div>
+			<div class="p-10">
+				<ul>
+					<li class="flex items-center">
+						<svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+						</svg>
+						<span class="ml-2 italic">Padawan +</span>
+					</li>
+					<li class="flex items-center">
+						<svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+						</svg>
+						<span class="ml-2">Solo missions</span>
+					</li>
+					<li class="flex items-center">
+						<svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+						</svg>
+						<span class="ml-2">Utility belt</span>
+					</li>
+				</ul>
+			</div>
+			<div class="flex px-10 pb-10 justfy-center">
+				<button class="flex items-center justify-center w-full h-12 px-6 text-sm uppercase bg-gray-200 rounded-lg">Join now</button>
+			</div>
+		</div>
+        <div class="flex flex-col flex-grow overflow-hidden bg-white rounded-lg shadow-lg mt-8 mx-4">
+			<div class="flex flex-col items-center p-10 bg-gray-200">
+				<span class="font-semibold">Jedi Master</span>
+				<div class="flex items-center">
+					<span class="text-3xl">$</span>
+					<span class="text-5xl font-bold">99</span>
+					<span class="text-2xl text-gray-500">/mo</span>
+				</div>
+			</div>
+			<div class="p-10">
+				<ul>
+					<li class="flex items-center">
+						<svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+						</svg>
+						<span class="ml-2 italic">Jedi Knight +</span>
+					</li>
+					<li class="flex items-center">
+						<svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+						</svg>
+						<span class="ml-2">Sit on council</span>
+					</li>
+					<li class="flex items-center">
+						<svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+						</svg>
+						<span class="ml-2">Stock options</span>
+					</li>
+				</ul>
+			</div>
+			<div class="flex px-10 pb-10 justfy-center">
+				<button class="flex items-center justify-center w-full h-12 px-6 text-sm uppercase bg-gray-200 rounded-lg">Join now</button>
+			</div>
+		</div>
+	</div>
         </div>
     );
 }
