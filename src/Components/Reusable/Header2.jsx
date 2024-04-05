@@ -1,6 +1,6 @@
 import React from "react";
 import Ring2 from "../../Assets/Img/Ring2.png";
-import Ball from "../../Assets/Img/Ball2.png";
+import Ball from "../../Assets/Img/bolac.png";
 
 const Header2 = () => {
     return (
@@ -22,7 +22,7 @@ const Header2 = () => {
 
         </div>
         <img
-                  className="absolute z-10 right-0 -mr-24 -mt-12 invisible md:visible "
+                  className="absolute z-10 right-0  -mt-12 invisible md:visible "
                   src={Ball}
                   alt="Property"
                 />

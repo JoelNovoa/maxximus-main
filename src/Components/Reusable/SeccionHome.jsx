@@ -1,7 +1,7 @@
 import React, { useEffect} from "react";
 import styles from "../../Assets/Styles/ImageSeccion.module.css";
 import Ball from "../../Assets/Img/ball.png";
-import Ball2 from "../../Assets/Img/Ball2.png";
+import Ball2 from "../../Assets/Img/bolab.png";
 
 const SeccionHome = ({ Titulo, Blanco, Descripcion, Buton, img, sphere1, sphere2 }) => {
   useEffect(() => {
@@ -46,7 +46,7 @@ const SeccionHome = ({ Titulo, Blanco, Descripcion, Buton, img, sphere1, sphere2
       alt="Property"
       />
       <img
-      className={sphere1 ? "absolute z-10 right-0 -mr-12 mt-80 invisible md:visible " : "hidden" }
+      className={sphere1 ? "absolute z-10 right-0  mt-80 invisible md:visible " : "hidden" }
       src={Ball2}
       alt="Property"
       />

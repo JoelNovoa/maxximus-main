@@ -24,7 +24,7 @@ const Sliderheader = () => {
                         <img src={image} className="w-full h-full object-cover" alt={`Slide ${index + 1}`} />
                         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-5"></div>
                     </div>
-                    <div className="absolute inset-0 flex justify-center items-center lg:items-center lg:text-center lg:w-full sm:mx-auto md:mx-4 ">
+                    <div className="absolute inset-0 flex justify-center items-center lg:items-center lg:text-center lg:w-full sm:mx-auto  ">
                 <div className="text-white">
                     <h1 className="text-2xl lg:text-5xl sm:text-sm font-extrabold overflow-hidden py-12">
                     Become the Modern Agent
