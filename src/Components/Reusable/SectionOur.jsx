@@ -1,4 +1,5 @@
 import React from 'react';
+import Ring from '../../Assets/Img/ring.png';
 
 const SectionOur = ({ BG, Titulo, Descripcion, SubTitulo, SubDescripcion }) => {
     return (
@@ -14,6 +15,11 @@ const SectionOur = ({ BG, Titulo, Descripcion, SubTitulo, SubDescripcion }) => {
                         <p className="text-xl">{SubDescripcion}</p>
                     </div>
                 </div>
+                <img
+                  className="absolute z-10 right-0 -mr-28 -mt-12 invisible md:visible "
+                  src={Ring}
+                  alt="Property"
+                />
             </div>
         </div>
     );

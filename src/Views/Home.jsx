@@ -6,7 +6,7 @@ import Mask from "../Assets/Img/SeccionLine.png";
 import Layout from "../Components/Common/Layout";
 import Footer from "../Components/Common/Fotter";
 import Carousel from "../Components/Reusable/Carousel";
-import Banner from "../Assets/Img/banner-8.png";
+import Banner from "../Assets/Img/technology.png";
 import SectionForm from "../Components/Reusable/SectionForm";
 import Sliderheader from "../Components/Reusable/SliderHeader";
 import SeccionHome from  "../Components/Reusable/SeccionHome"
@@ -16,8 +16,8 @@ const Home = () => {
     <div className="text-Maxximun-Blanco">
       <Sliderheader/>    
       <Section 
-      Blanco={false}
-      Titulo={"OUR HISTORY"}
+       Blanco={false}
+       Titulo={"OUR HISTORY"}
        Descripcion={"At Maxximum Realty, we're pioneers in the real estate industry, harnessing the power of AI and the latest technologies to revolutionize the agent experience"}
        img={Mask} 
        Buton={true}
@@ -26,11 +26,13 @@ const Home = () => {
 
        <Carousel />
        <SeccionHome 
-       Blanco={true}
-       Titulo={"TECHNOLOGY"}
-       Descripcion={"Recent years have seen a pivotal shift for salespeople with the surge in online and social media interaction, driven by technology. Embracing this change is positive but demands acquiring new methods and skills. At Maxximum Realty, we excel in adapting to innovative tools and business approaches, ensuring effective execution for success, much like Real Estate Agents in their field."}
+        Blanco={true}
+        Titulo={"TECHNOLOGY"}
+        Descripcion={"Recent years have seen a pivotal shift for salespeople with the surge in online and social media interaction, driven by technology. Embracing this change is positive but demands acquiring new methods and skills. At Maxximum Realty, we excel in adapting to innovative tools and business approaches, ensuring effective execution for success, much like Real Estate Agents in their field."}
         img={Banner}
         Buton={true}
+        sphere1={true}
+        sphere2={false}
         />
       <SectionForm
         

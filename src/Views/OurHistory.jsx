@@ -3,7 +3,7 @@ import Header from "../Components/Reusable/Header";
 import SectionOur from "../Components/Reusable/SectionOur";
 import SectionOur2 from "../Components/Reusable/SectionOur2";
 import Section from "../Components/Reusable/Section";
-import Confident from "../Assets/Img/confident.png";
+import Confident from "../Assets/Img/leadership.png";
 import Footer from "../Components/Common/Fotter";
 import SectionHome from "../Components/Reusable/SeccionHome"
 
@@ -39,6 +39,8 @@ const OurHistory = () => {
                     "Maxximum Realty is a forward-thinking real estate company that empowers agents to lead the way in the industry. We provide the tools, technology, and support to help agents grow their business and succeed in the digital age. Our agents are confident, knowledgeable, and ready to lead the way in the real estate industry."}
                     img={Confident}
                     Buton={true}
+                    sphere1={false}
+                    sphere2={true}
         />
         <Footer />
         </>

@@ -26,7 +26,7 @@ const NavBar = () => {
           className={
             !isMenuOpen
               ? "flex relative py-10 items-center w-full px-4 justify-between bg-[#002867]/[.9] z-40 shadow-lg"
-              : "flex fixed flex-col h-full items-center w-full px-4 justify-around bg-[#002867]/[.8] z-40"
+              : "flex fixed flex-col h-screen items-center w-screen px-4 justify-around bg-[#002867]/[.8] z-40"
           }
         >
           <div className="justify-items-center w-2/7 lg:ml-12 ">
@@ -56,7 +56,7 @@ const NavBar = () => {
               {isMenuOpen &&
                 links.map((route) => (
                   <Link
-                    className="text-xl text-Maxximum-Blanco font-Poppins mb-4"
+                    className="text-xl text-center text-Maxximum-Blanco font-Poppins mb-4"
                     to={route.link}
                     key={route.id}
                     onClick={() => toggleMenu()}
@@ -66,13 +66,6 @@ const NavBar = () => {
                 ))}
               {isMenuOpen && (
                 <>
-                  <Link
-                    to="/events"
-                    className="text-xl text-Maxximum-Blanco font-Poppins mb-4"
-                    onClick={() => toggleMenu()}
-                  >
-                    Events
-                  </Link>
                   <Link
                     to="/realtor"
                     className="text-xl text-Maxximum-Blanco rounded-4xl bg-white text-black px-9 font-Poppins mb-4"
@@ -138,6 +131,7 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
 
 
 

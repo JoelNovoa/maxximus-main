@@ -6,6 +6,7 @@ import Home from "../Assets/Img/Vector.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import FindHomeController from "../Controllers/FindHomeController";
+import Ring from "../Assets/Img/ring.png";
 
 
 
@@ -15,7 +16,7 @@ const FindHome = () => {
 
   return (
     <>
-    <div className="bg-[#0A182E]">
+    <div className="bg-[#002867]">
 <section className="bg-[url(./Assets/Img/banner1.png)] h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center bg-[#0A182E]">
   <div className="text-center text-white mb-8">
     <h1 className="text-4xl font-bold">Find a Home</h1>
@@ -47,6 +48,11 @@ const FindHome = () => {
               </form>
             </div>
           </section>
+          <img
+                  className="absolute z-10 right-0 -mr-28 -mt-48 invisible md:visible "
+                  src={Ring}
+                  alt="Property"
+                />
           <FindHomeController arrayCard={arrayCard} />
 
           </div>
