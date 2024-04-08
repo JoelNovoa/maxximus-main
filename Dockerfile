@@ -1,6 +1,7 @@
-# Use a multi-stage build for a smaller final image
-FROM node:latest AS builder
+# Base image with Node.js
+FROM node:18-alpine AS builder
 
+# Set working directory
 WORKDIR /app
 
 # Copy package.json and package-lock.json (if using)
@@ -9,26 +10,20 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the rest of your application code
+# Copy the rest of your React app
 COPY . .
 
-# Build the React application in production mode (optimized for smaller size)
+# Build the React app for production
 RUN npm run build 
 
-# Stage 2: Create a slim runtime image with Nginx
-FROM nginx:alpine 
+# Smaller image for serving
+FROM nginx:alpine
 
-WORKDIR /usr/share/nginx/html
-
-# Copy the production build artifacts from the builder stage
+# Copy built React app from builder stage
 COPY --from=builder /app/build /usr/share/nginx/html
 
-# Expose port 80 (adjust if needed)
-ENV HOST 0.0.0.0
+# Expose port (adjust if needed)
 EXPOSE 3000
 
-# Use a custom Nginx configuration for serving React applications (replace with your actual configuration)
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Start Nginx in the foreground
+# Serve the built app with nginx
 CMD ["nginx", "-g", "daemon off;"]
