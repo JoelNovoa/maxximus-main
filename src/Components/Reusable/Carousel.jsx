@@ -5,6 +5,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import Corousel1 from "../../Assets/Img/Corousel1.png";
 import Corousel2 from "../../Assets/Img/Corousel2.png";
 import Corousel3 from "../../Assets/Img/Corousel3.png";
+import EventsT from "../../Assets/Img/Titles/EventsT.png";
  
 
 const Carousel = () => {
@@ -17,7 +18,7 @@ const Carousel = () => {
             {/* Línea izquierda */}
             <div className="absolute left-32 h-48 bg-white w-px hidden sm:block"></div>
             {/* Título */}
-            <h1 className="text-3xl text-white font-extrabold sm:text-5xl text-center">EVENTS</h1>
+            <img className="mx-auto my-auto" src={EventsT} alt="Property"/>
             {/* Línea derecha */}
             <div className="absolute right-36 h-48 bg-white w-px hidden sm:block"></div>
             </div>

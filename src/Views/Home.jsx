@@ -10,6 +10,9 @@ import Banner from "../Assets/Img/technology.png";
 import SectionForm from "../Components/Reusable/SectionForm";
 import Sliderheader from "../Components/Reusable/SliderHeader";
 import SeccionHome from  "../Components/Reusable/SeccionHome"
+import TituloOur from "../Assets/Img/Titles/OurHistoryT.png"
+import Techno from "../Assets/Img/Titles/TechnologyT.png"
+import BecomeT from "../Assets/Img/Titles/BecomeT.png"
 
 const Home = () => {
   return (
@@ -17,7 +20,7 @@ const Home = () => {
       <Sliderheader/>    
       <Section 
        Blanco={false}
-       Titulo={"OUR HISTORY"}
+       Titulo={TituloOur}
        Descripcion={"At Maxximum Realty, we're pioneers in the real estate industry, harnessing the power of AI and the latest technologies to revolutionize the agent experience"}
        img={Mask} 
        Buton={true}
@@ -27,7 +30,7 @@ const Home = () => {
        <Carousel />
        <SeccionHome 
         Blanco={true}
-        Titulo={"TECHNOLOGY"}
+        Titulo={Techno}
         Descripcion={"Recent years have seen a pivotal shift for salespeople with the surge in online and social media interaction, driven by technology. Embracing this change is positive but demands acquiring new methods and skills. At Maxximum Realty, we excel in adapting to innovative tools and business approaches, ensuring effective execution for success, much like Real Estate Agents in their field."}
         img={Banner}
         Buton={true}
@@ -36,7 +39,7 @@ const Home = () => {
         />
       <SectionForm
         
-        Titulo={"Become the modern agent with us"}
+        Titulo={BecomeT}
         SubTitulo={"Grow Your Business With Maxximun"}
         Descripcion={"At Maxximum Realty, we understand that a great agent makes all the difference. Join us to leverage tailored strategies for the digital age, unlocking more leads, boosting sales, and earning higher commissions. Experience the future of real estate with Maxximum Realty—we're here to help you thrive."}
       />

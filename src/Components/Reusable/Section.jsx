@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../../Assets/Styles/ImageSeccion.module.css";
 import Ring2 from "../../Assets/Img/Ring2.png";
 import Ball from "../../Assets/Img/ball.png";
+import HereT from "../../Assets/Img/Titles/HereiswhatTB.png";
 
       const Section = ({ Titulo, Blanco, Descripcion, Buton, img }) => {
         const [secondLineTop, setSecondLineTop] = useState(0);
@@ -34,7 +35,7 @@ import Ball from "../../Assets/Img/ball.png";
                 : "max-w-xl text-center sm:text-left rtl:sm:text-right text-white sm:mx-auto sm:my-6 pl-4 md:ml-7 lg:ml-12 "
             }
           >
-            <h1 className="text-3xl font-extrabold  sm:text-5xl text-left">{Titulo}</h1>
+            <img src={Titulo} className="mt-12 sm:mt-12" alt="Section Image"/>
             <p className="max-w-lg sm:text-xl/relaxed text-start">{Descripcion}</p>
             {Buton && (
               <div className="mt-8 flex flex-wrap gap-4 justify-center lg:mr-96 sm:justify-center sm:mt-4">
@@ -60,22 +61,20 @@ import Ball from "../../Assets/Img/ball.png";
           </div>
         </div>
         <img
-        className="absolute z-10 left-0 -ml-36 -mb-32  invisible md:visible "
+        className="absolute z-10 left-0 -ml-36 -mb-72  invisible md:visible "
         src={Ring2}
         alt="Property"
         />
         {/* Second white line below the sections */}
         <div ref={secondLineRef} className="w-full h-px bg-[#F2F2F3] mt-28 hidden sm:block"></div>
 
-        {Titulo === "OUR HISTORY" ? (
+
           <div className="py-24 justify-center border-b-2 border-y-white">
-            <h1 className="text-2xl sm:text-4xl font-bold text-center text-white">
-              HERE IS WHAT WE OFFER YOU?
-            </h1>
+            <img className="mx-auto my-auto" src={HereT} alt="Property"/>
           </div>
-        ) : (
+     
           <></>
-        )}
+        
       </section>
 
   );

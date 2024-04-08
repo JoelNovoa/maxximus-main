@@ -26,7 +26,7 @@ const NavBar = () => {
           className={
             !isMenuOpen
               ? "flex relative py-10 items-center w-full px-4 justify-between bg-[#002867]/[.9] z-40 shadow-lg"
-              : "flex fixed flex-col h-screen items-center w-screen px-4 justify-around bg-[#002867]/[.8] z-40"
+              : "flex fixed flex-col h-screen items-center w-screen px-4 justify-around bg-[#002867] z-40"
           }
         >
           <div className="justify-items-center w-2/7 lg:ml-12 ">
@@ -68,7 +68,7 @@ const NavBar = () => {
                 <>
                   <Link
                     to="/realtor"
-                    className="text-xl text-Maxximum-Blanco rounded-4xl bg-white text-black px-9 font-Poppins mb-4"
+                    className="text-xl text-Maxximum-Blanco rounded-4xl bg-white text-black px-9 font-Poppins mb-4 "
                   >
                     Join Our Team
                   </Link>
@@ -98,9 +98,9 @@ const NavBar = () => {
               <div className="flex w-1/7 text-center">
                 <Link
                   to="/realtor"
-                  className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl py-3 px-12 font-bold ml-32 "
+                  className="text-black rounded-4xl bg-Maxximum-Blanco rounded-xl py-3 px-12 font-bold ml-32 hover:bg-[#0A182E] hover:text-white"
                 >
-                  Join Our Team
+                  JOIN OUR TEAM
                 </Link>
               </div>
             </>
@@ -111,7 +111,7 @@ const NavBar = () => {
         <div className="flex">
           <Link
             to="/our-history"
-            className="text-2xl text-[#0A182E] font-bold ml-7"
+            className="text-2xl text-[#0A182E] font-bold ml-7 "
           >
             Our History
           </Link>

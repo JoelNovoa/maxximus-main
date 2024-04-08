@@ -8,15 +8,17 @@ import LogIn from "../Components/Common/LogIn";
 import CreateAccount from "../Components/Common/CreateAccount";
 import Sliderheader from "../Components/Reusable/SliderHeader";
 import ImageUtils from "../Controllers/ImageUtils";
+import Eventos from "../Assets/Img/Titles/Events.png"
 
 const Events = () => {
   return (
     <>
       <Header
-        img={"bg-[url(./Assets/Img/personas.png)]"}
-        Titulo={"Events"}
+        img={"bg-[url(./Assets/Img/EventsH.png)]"}
+        Titulo={Eventos}
+        Subtitulo={"Grow Your Business With Maxximun"}
         Descripcion={
-          "At Maxximum Realty, we're pioneers in the real estate industry, harnessing the power of AI and the latest technologies to revolutionize the agent experience."
+          "At Maxximum Realty, we understand that a great agent makes all the difference. Join us to leverage tailored strategies for the digital age, unlocking more leads, boosting sales, and earning higher commissions. Experience the future of real estate with Maxximum Realty—we're here to help you thrive."
         }
         Buton={false}
       />

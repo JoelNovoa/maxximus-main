@@ -4,11 +4,11 @@ const SectionForm = ({ img, Titulo, SubTitulo, Descripcion }) => {
   return (
 
 <section className="relative bg-cover bg-[url(./././Assets/Img/bannerform.png)] bg-center bg-custom-large sm:bg-custom-small">
-      <div className="absolute inset-0 bg-black opacity-35"></div>
+      <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative mx-auto max-w-screen-xl lg:flex lg:h-screen lg:items-center">
       <div className="max-w-xl text-center sm:text-left text-white lg:mr-auto mt-12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12">{Titulo}</h1>
-        <h3 className="text-lg sm:text-xl md:text-2xl">{SubTitulo}</h3>
+      <img src={Titulo} className="mb-20  sm:mt-52" alt="Section Image"/>
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold">{SubTitulo}</h3>
         <p className="mt-4 max-w-lg text-sm sm:text-base md:text-lg lg:text-xl">{Descripcion}</p>
       </div>
 
