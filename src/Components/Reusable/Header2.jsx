@@ -1,10 +1,17 @@
 import React from "react";
+import Ring2 from "../../Assets/Img/Ring2.png";
+import Ball from "../../Assets/Img/bolac.png";
 
 const Header2 = () => {
     return (
-        <section className="bg-white py-12">
+        <section className="bg-white py-12 h-[50svh]">
+                <img
+                  className="absolute z-10 left-0 -ml-44 -mt-32  invisible md:visible "
+                  src={Ring2}
+                  alt="Property"
+                />
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">ATTEND ANY OF OUR TRAINING CLASSES, 
+          <h2 className="text-3xl font-bold mb-8 lg:mt-32">ATTEND ANY OF OUR TRAINING CLASSES, 
           <br />
             WORKSHOPS, AND EVENTS!</h2>
             <button
@@ -14,6 +21,11 @@ const Header2 = () => {
             </button>
 
         </div>
+        <img
+                  className="absolute z-10 right-0  -mt-12 invisible md:visible "
+                  src={Ball}
+                  alt="Property"
+                />
       </section>
     );
 }

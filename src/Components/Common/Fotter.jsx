@@ -7,7 +7,7 @@ import User from "../../Assets/Img/image-user.png";
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-center w-full bg-[#0A182E]">
+    <div className="flex items-center justify-center w-full bg-[#0A182E] border-t-2 border-white">
       <footer className="w-full text-gray-700 bg-[#0A182E] body-font">
         <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
         <div className="flex justify-center items-center mb-4 sm:mb-0">

@@ -6,21 +6,22 @@ import Home from "../Assets/Img/Vector.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import FindHomeController from "../Controllers/FindHomeController";
+import Ring from "../Assets/Img/anillop.png";
 
 
 
 
 const FindHome = () => {
-  const arrayCard = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const arrayCard = [1, 2, 3, 4];
 
   return (
     <>
-    <div className="bg-[#0A182E]">
+    <div className="bg-[#002867] relative">
 <section className="bg-[url(./Assets/Img/banner1.png)] h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center bg-[#0A182E]">
   <div className="text-center text-white mb-8">
     <h1 className="text-4xl font-bold">Find a Home</h1>
   </div>
-  <div className="w-full text-white">
+  <div className="w-full text-white relative">
     <form className="flex flex-col sm:flex-row items-center justify-center">
       <select className="outline-none select select-bordered w-5/6 max-w-sm pl-4 py-4 sm:py-8 rounded-md text-center focus:outline-none bg-[#14253E] opacity-65  mb-4 sm:mb-0 sm:rounded-s-4xl">
         <option disabled selected>
@@ -38,7 +39,7 @@ const FindHome = () => {
     </select>
 
 
-      <div className="w-full max-w-lg flex flex-col sm:flex-row items-center">
+      <div className="w-full relative max-w-lg flex flex-col sm:flex-row items-center">
       <input type="search" name="search" placeholder="City, Neighborhood, ZIP, Address" className="bg-[#14253E] opacity-65 w-5/6 sm:w-full pl-4 py-4 sm:py-8 sm:rounded-r-4xl focus:outline-none mb-4 sm:mb-0 rounded-full"/>  
          <button type="submit" className="w-5/6 sm:w-auto px-16 py-4 sm:py-8 rounded-l-none sm:rounded-l-4xl rounded-4xl sm:rounded-4xl bg-[#0A182E] text-white">
                     Search
@@ -47,6 +48,11 @@ const FindHome = () => {
               </form>
             </div>
           </section>
+          <img
+                  className="absolute  z-10 right-0  -mt-44 invisible md:visible "
+                  src={Ring}
+                  alt="Property"
+                />
           <FindHomeController arrayCard={arrayCard} />
 
           </div>

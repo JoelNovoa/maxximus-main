@@ -8,7 +8,7 @@ const SectionForm2 = ({ img, Titulo, SubTitulo, Descripcion }) => {
       <div className="relative mx-auto max-w-screen-xl lg:flex lg:h-screen lg:items-center">
       <div className="max-w-xl text-center lg:text-left text-white lg:mr-auto">
         <br/>
-          <h1 className="text-3xl font-extrabold sm:text-5xl">{Titulo}</h1>
+        <img src={Titulo} className="mx-auto my-auto sm:mt-12 " alt="Section Image"/>
           <br/>
           <br/>
           <br/>

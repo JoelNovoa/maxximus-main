@@ -12,10 +12,8 @@ const Header = ({ img, Titulo, Subtitulo, Descripcion, Buton }) => {
 
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="text-white max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-          <h1 className="text-3xl font-extrabold sm:text-5xl text-left">
-            {Titulo}
-          </h1>
-          <h1 className="text-3xl font-extrabold sm:text-5xl text-left">
+        <img src={Titulo} className="" alt="Section Image"/> 
+          <h1 className="text-lg text-left sm:text-xl md:text-2xl font-bold">
             {Subtitulo}
           </h1>
           <br />
